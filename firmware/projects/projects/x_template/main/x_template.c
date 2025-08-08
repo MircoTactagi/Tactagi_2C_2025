@@ -1,8 +1,17 @@
-/*! @mainpage Blinking
+/*! @mainpage Template
  *
- * \section genDesc General Description
+ * @section genDesc General Description
  *
- * This example makes LED_1 blink.
+ * This section describes how the program works.
+ *
+ * <a href="https://drive.google.com/...">Operation Example</a>
+ *
+ * @section hardConn Hardware Connection
+ *
+ * |    Peripheral  |   ESP32   	|
+ * |:--------------:|:--------------|
+ * | 	PIN_X	 	| 	GPIO_X		|
+ *
  *
  * @section changelog Changelog
  *
@@ -17,30 +26,14 @@
 /*==================[inclusions]=============================================*/
 #include <stdio.h>
 #include <stdint.h>
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
-#include "led.h"
 /*==================[macros and definitions]=================================*/
-#define CONFIG_BLINK_PERIOD 1000
+
 /*==================[internal data definition]===============================*/
 
 /*==================[internal functions declaration]=========================*/
 
 /*==================[external functions definition]==========================*/
 void app_main(void){
-    LedsInit();
-    while(true){
-        printf("LED ON\n");
-        LedOn(LED_1);
-        LedOn(LED_2);
-        LedOn(LED_3);
-        vTaskDelay(CONFIG_BLINK_PERIOD / portTICK_PERIOD_MS);
-        printf("LED OFF\n");
-        LedOff(LED_1);
-        LedOff(LED_2);
-        LedOff(LED_3);
-        vTaskDelay(CONFIG_BLINK_PERIOD / portTICK_PERIOD_MS);
-        
-    }
+	printf("Hello world!\n");
 }
 /*==================[end of file]============================================*/
