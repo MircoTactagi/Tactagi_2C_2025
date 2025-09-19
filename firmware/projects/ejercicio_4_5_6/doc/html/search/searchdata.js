@@ -1,16 +1,16 @@
 var indexSectionsWithContent =
 {
-  0: "_abcdefghiklmnoprstuvwxy",
+  0: "abcdefghiklmnoprstuvwxy",
   1: "abcdefghiloprst",
-  2: "abcdefghilmnprstuvwx",
+  2: "abcdefghilmnprstuw",
   3: "abcdefghilmnprstuw",
-  4: "_abcdefghilmnoprstuvwxy",
+  4: "abcdefghilmnoprstuvwxy",
   5: "abegiklmnprstu",
   6: "abcegiklmpstu",
   7: "abceghilmprstu",
-  8: "_abcdefghilmnoprstuvw",
-  9: "abdghilmnprstuw",
-  10: "t"
+  8: "abcdefghilmnoprstuvw",
+  9: "abcdeghilmnprstuw",
+  10: "bcdghmprs"
 };
 
 var indexSectionNames =
@@ -30,8 +30,8 @@ var indexSectionNames =
 
 var indexSectionLabels =
 {
-  0: "Todo",
-  1: "Estructuras de Datos",
+  0: "Todos",
+  1: "Estructuras de datos",
   2: "Archivos",
   3: "Funciones",
   4: "Variables",
@@ -39,7 +39,7 @@ var indexSectionLabels =
   6: "Enumeraciones",
   7: "Valores de enumeraciones",
   8: "defines",
-  9: "Grupos",
+  9: "Módulos",
   10: "Páginas"
 };
 

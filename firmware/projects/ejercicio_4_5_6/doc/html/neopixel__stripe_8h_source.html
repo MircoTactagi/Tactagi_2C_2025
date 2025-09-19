@@ -1,25 +1,25 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Proyecto 1: Fichero Fuente /home/fiuner/Escritorio/Repositorio/Tactagi_2C_2025/firmware/drivers/devices/inc/neopixel_stripe.h</title>
+<title>ejercicio_4_5_6: Archivo de código fuente C:/Users/Usuario/Desktop/Tactagi_2C_2025/firmware/drivers/devices/inc/neopixel_stripe.h</title>
+<link rel="icon" href="icon.ico" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-  $(document).ready(function() { init_search(); });
-/* @license-end */
+  $(function() { init_search(); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -31,21 +31,18 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fiuner.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Proyecto 1<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">ejercicio_4_5_6<span id="projectnumber">&#160;1.0</span>
    </div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
-          <img id="MSearchSelect" src="search/mag_sel.svg"
-               onmouseover="return searchBox.OnSearchSelectShow()"
-               onmouseout="return searchBox.OnSearchSelectHide()"
-               alt=""/>
-          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"
                onfocus="searchBox.OnSearchFieldFocus(true)" 
                onblur="searchBox.OnSearchFieldFocus(false)" 
                onkeyup="searchBox.OnSearchFieldChange(event)"/>
           </span><span class="right">
-            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
           </span>
         </div>
 </td>
@@ -54,11 +51,12 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Generado por Doxygen 1.9.4 -->
+<!-- Generado por Doxygen 1.14.0 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
-/* @license-end */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
 </script>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -72,10 +70,9 @@ var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('neopixel__stripe_8h_source.html',''); initResizable(); });
-/* @license-end */
+$(function(){initNavTree('neopixel__stripe_8h_source.html','',''); });
 </script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -86,9 +83,16 @@ $(document).ready(function(){initNavTree('neopixel__stripe_8h_source.html',''); 
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="header">
@@ -96,7 +100,9 @@ $(document).ready(function(){initNavTree('neopixel__stripe_8h_source.html',''); 
 </div><!--header-->
 <div class="contents">
 <a href="neopixel__stripe_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef NEOPIXEL_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define NEOPIXEL_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define NEOPIXEL_H</span><span class="preprocessor"></span><span class="preprocessor"></span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">/*==================[inclusions]=============================================*/</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;sdkconfig.h&quot;</span></div>
@@ -138,50 +144,51 @@ $(document).ready(function(){initNavTree('neopixel__stripe_8h_source.html',''); 
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">/*==================[external data declaration]==============================*/</span></div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">/*==================[external functions declaration]=========================*/</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span></div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___neo_pixel___stripe.html#ga1dd960cb0564070aae4f05d455a21942">NeoPixelInit</a>(<a class="code hl_typedef" href="group___g_i_o_p.html#gac6f7bd4f7ee306a4519f04641cbf2d67">gpio_t</a> pin, uint16_t len, <a class="code hl_typedef" href="group___neo_pixel___stripe.html#ga46c58082e9d85e6503e36f0e2306bb39">neopixel_color_t</a> *color_array);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span></div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___neo_pixel___stripe.html#ga7eda8ecf6370a5af575af2ca85eafa6d">NeoPixelAllOff</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span></div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___neo_pixel___stripe.html#ga00aedd9bd24d607244a314348180bdb8">NeoPixelAllColor</a>(<a class="code hl_typedef" href="group___neo_pixel___stripe.html#ga46c58082e9d85e6503e36f0e2306bb39">neopixel_color_t</a> color);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span></div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___neo_pixel___stripe.html#ga7f53683e3207e9523fc201bdc79b6025">NeoPixelSetPixel</a>(uint16_t pixel, <a class="code hl_typedef" href="group___neo_pixel___stripe.html#ga46c58082e9d85e6503e36f0e2306bb39">neopixel_color_t</a> color);</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span></div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___neo_pixel___stripe.html#ga23ae424d3a323c2e315b3f89ba857a84">NeoPixelSetArray</a>(<a class="code hl_typedef" href="group___neo_pixel___stripe.html#ga46c58082e9d85e6503e36f0e2306bb39">neopixel_color_t</a> *color_array);</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span></div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___neo_pixel___stripe.html#gac95515e3889b8cebd2f8bf0e72590d33">NeoPixelShift</a>(<span class="keywordtype">bool</span> upwards);</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span></div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___neo_pixel___stripe.html#gacebd73c47572bd32b7f578e3dd98cc2f">NeoPixelBrightness</a>(uint8_t bright);</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span></div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><a class="code hl_typedef" href="group___neo_pixel___stripe.html#ga46c58082e9d85e6503e36f0e2306bb39">neopixel_color_t</a> <a class="code hl_function" href="group___neo_pixel___stripe.html#gaf687598b356c6dab43afa17df8014a22">NeoPixelRgb2Color</a>(uint8_t red, uint8_t green, uint8_t blue);</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span></div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><a class="code hl_typedef" href="group___neo_pixel___stripe.html#ga46c58082e9d85e6503e36f0e2306bb39">neopixel_color_t</a> <a class="code hl_function" href="group___neo_pixel___stripe.html#ga1f293711b6af3e20c821fd26c7089111">NeoPixelHSV2Color</a>(uint16_t hue, uint8_t sat, uint8_t val);</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span></div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___neo_pixel___stripe.html#gaa286fdaba2147e99c24195745ad30dba">NeoPixelRainbow</a>(uint16_t first_hue, uint8_t sat, uint8_t val, uint8_t reps);</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span></div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment">/*==================[end of file]============================================*/</span></div>
 <div class="ttc" id="agpio__mcu_8h_html"><div class="ttname"><a href="gpio__mcu_8h.html">gpio_mcu.h</a></div></div>
 <div class="ttc" id="agroup___g_i_o_p_html_gac6f7bd4f7ee306a4519f04641cbf2d67"><div class="ttname"><a href="group___g_i_o_p.html#gac6f7bd4f7ee306a4519f04641cbf2d67">gpio_t</a></div><div class="ttdeci">enum gpio_list gpio_t</div><div class="ttdoc">ESP32-C6 available GPIOs (not all of them are available in ESP-EDU)</div></div>
-<div class="ttc" id="agroup___neo_pixel___stripe_html_ga00aedd9bd24d607244a314348180bdb8"><div class="ttname"><a href="group___neo_pixel___stripe.html#ga00aedd9bd24d607244a314348180bdb8">NeoPixelAllColor</a></div><div class="ttdeci">void NeoPixelAllColor(neopixel_color_t color)</div><div class="ttdoc">Change all NeoPixels in the stripe to the same color.</div><div class="ttdef"><b>Definition:</b> <a href="neopixel__stripe_8c_source.html#l00058">neopixel_stripe.c:58</a></div></div>
-<div class="ttc" id="agroup___neo_pixel___stripe_html_ga1dd960cb0564070aae4f05d455a21942"><div class="ttname"><a href="group___neo_pixel___stripe.html#ga1dd960cb0564070aae4f05d455a21942">NeoPixelInit</a></div><div class="ttdeci">void NeoPixelInit(gpio_t pin, uint16_t len, neopixel_color_t *color_array)</div><div class="ttdoc">NeoPixel array initialization.</div><div class="ttdef"><b>Definition:</b> <a href="neopixel__stripe_8c_source.html#l00038">neopixel_stripe.c:38</a></div></div>
-<div class="ttc" id="agroup___neo_pixel___stripe_html_ga1f293711b6af3e20c821fd26c7089111"><div class="ttname"><a href="group___neo_pixel___stripe.html#ga1f293711b6af3e20c821fd26c7089111">NeoPixelHSV2Color</a></div><div class="ttdeci">neopixel_color_t NeoPixelHSV2Color(uint16_t hue, uint8_t sat, uint8_t val)</div><div class="ttdoc">Convert hue, value and saturation values to 24 bits color (using the HSV color model)</div><div class="ttdef"><b>Definition:</b> <a href="neopixel__stripe_8c_source.html#l00125">neopixel_stripe.c:125</a></div></div>
-<div class="ttc" id="agroup___neo_pixel___stripe_html_ga23ae424d3a323c2e315b3f89ba857a84"><div class="ttname"><a href="group___neo_pixel___stripe.html#ga23ae424d3a323c2e315b3f89ba857a84">NeoPixelSetArray</a></div><div class="ttdeci">void NeoPixelSetArray(neopixel_color_t *color_array)</div><div class="ttdoc">Set all NeoPixels in the array with the color stored in an array.</div><div class="ttdef"><b>Definition:</b> <a href="neopixel__stripe_8c_source.html#l00070">neopixel_stripe.c:70</a></div></div>
-<div class="ttc" id="agroup___neo_pixel___stripe_html_ga46c58082e9d85e6503e36f0e2306bb39"><div class="ttname"><a href="group___neo_pixel___stripe.html#ga46c58082e9d85e6503e36f0e2306bb39">neopixel_color_t</a></div><div class="ttdeci">uint32_t neopixel_color_t</div><div class="ttdoc">24 bits color</div><div class="ttdef"><b>Definition:</b> <a href="neopixel__stripe_8h_source.html#l00071">neopixel_stripe.h:71</a></div></div>
-<div class="ttc" id="agroup___neo_pixel___stripe_html_ga7eda8ecf6370a5af575af2ca85eafa6d"><div class="ttname"><a href="group___neo_pixel___stripe.html#ga7eda8ecf6370a5af575af2ca85eafa6d">NeoPixelAllOff</a></div><div class="ttdeci">void NeoPixelAllOff(void)</div><div class="ttdoc">Turn off all NeoPixels.</div><div class="ttdef"><b>Definition:</b> <a href="neopixel__stripe_8c_source.html#l00044">neopixel_stripe.c:44</a></div></div>
-<div class="ttc" id="agroup___neo_pixel___stripe_html_ga7f53683e3207e9523fc201bdc79b6025"><div class="ttname"><a href="group___neo_pixel___stripe.html#ga7f53683e3207e9523fc201bdc79b6025">NeoPixelSetPixel</a></div><div class="ttdeci">void NeoPixelSetPixel(uint16_t pixel, neopixel_color_t color)</div><div class="ttdoc">Set an individual pixel to a color.</div><div class="ttdef"><b>Definition:</b> <a href="neopixel__stripe_8c_source.html#l00065">neopixel_stripe.c:65</a></div></div>
-<div class="ttc" id="agroup___neo_pixel___stripe_html_gaa286fdaba2147e99c24195745ad30dba"><div class="ttname"><a href="group___neo_pixel___stripe.html#gaa286fdaba2147e99c24195745ad30dba">NeoPixelRainbow</a></div><div class="ttdeci">void NeoPixelRainbow(uint16_t first_hue, uint8_t sat, uint8_t val, uint8_t reps)</div><div class="ttdoc">Set all NeoPixels with a gradient of colors.</div><div class="ttdef"><b>Definition:</b> <a href="neopixel__stripe_8c_source.html#l00112">neopixel_stripe.c:112</a></div></div>
-<div class="ttc" id="agroup___neo_pixel___stripe_html_gac95515e3889b8cebd2f8bf0e72590d33"><div class="ttname"><a href="group___neo_pixel___stripe.html#gac95515e3889b8cebd2f8bf0e72590d33">NeoPixelShift</a></div><div class="ttdeci">void NeoPixelShift(bool upwards)</div><div class="ttdoc">Shift the all NeoPixel colors in the array 1 position (up or down)</div><div class="ttdef"><b>Definition:</b> <a href="neopixel__stripe_8c_source.html#l00088">neopixel_stripe.c:88</a></div></div>
-<div class="ttc" id="agroup___neo_pixel___stripe_html_gacebd73c47572bd32b7f578e3dd98cc2f"><div class="ttname"><a href="group___neo_pixel___stripe.html#gacebd73c47572bd32b7f578e3dd98cc2f">NeoPixelBrightness</a></div><div class="ttdeci">void NeoPixelBrightness(uint8_t bright)</div><div class="ttdoc">Change NeoPixel brightness.</div><div class="ttdef"><b>Definition:</b> <a href="neopixel__stripe_8c_source.html#l00107">neopixel_stripe.c:107</a></div></div>
-<div class="ttc" id="agroup___neo_pixel___stripe_html_gaf687598b356c6dab43afa17df8014a22"><div class="ttname"><a href="group___neo_pixel___stripe.html#gaf687598b356c6dab43afa17df8014a22">NeoPixelRgb2Color</a></div><div class="ttdeci">neopixel_color_t NeoPixelRgb2Color(uint8_t red, uint8_t green, uint8_t blue)</div><div class="ttdoc">Convert 3 individual color levels (R, G, B) to a 24bits color data.</div><div class="ttdef"><b>Definition:</b> <a href="neopixel__stripe_8c_source.html#l00121">neopixel_stripe.c:121</a></div></div>
+<div class="ttc" id="agroup___neo_pixel___stripe_html_ga00aedd9bd24d607244a314348180bdb8"><div class="ttname"><a href="group___neo_pixel___stripe.html#ga00aedd9bd24d607244a314348180bdb8">NeoPixelAllColor</a></div><div class="ttdeci">void NeoPixelAllColor(neopixel_color_t color)</div><div class="ttdoc">Change all NeoPixels in the stripe to the same color.</div><div class="ttdef"><b>Definition</b> <a href="neopixel__stripe_8c_source.html#l00058">neopixel_stripe.c:58</a></div></div>
+<div class="ttc" id="agroup___neo_pixel___stripe_html_ga1dd960cb0564070aae4f05d455a21942"><div class="ttname"><a href="group___neo_pixel___stripe.html#ga1dd960cb0564070aae4f05d455a21942">NeoPixelInit</a></div><div class="ttdeci">void NeoPixelInit(gpio_t pin, uint16_t len, neopixel_color_t *color_array)</div><div class="ttdoc">NeoPixel array initialization.</div><div class="ttdef"><b>Definition</b> <a href="neopixel__stripe_8c_source.html#l00038">neopixel_stripe.c:38</a></div></div>
+<div class="ttc" id="agroup___neo_pixel___stripe_html_ga1f293711b6af3e20c821fd26c7089111"><div class="ttname"><a href="group___neo_pixel___stripe.html#ga1f293711b6af3e20c821fd26c7089111">NeoPixelHSV2Color</a></div><div class="ttdeci">neopixel_color_t NeoPixelHSV2Color(uint16_t hue, uint8_t sat, uint8_t val)</div><div class="ttdoc">Convert hue, value and saturation values to 24 bits color (using the HSV color model)</div><div class="ttdef"><b>Definition</b> <a href="neopixel__stripe_8c_source.html#l00125">neopixel_stripe.c:125</a></div></div>
+<div class="ttc" id="agroup___neo_pixel___stripe_html_ga23ae424d3a323c2e315b3f89ba857a84"><div class="ttname"><a href="group___neo_pixel___stripe.html#ga23ae424d3a323c2e315b3f89ba857a84">NeoPixelSetArray</a></div><div class="ttdeci">void NeoPixelSetArray(neopixel_color_t *color_array)</div><div class="ttdoc">Set all NeoPixels in the array with the color stored in an array.</div><div class="ttdef"><b>Definition</b> <a href="neopixel__stripe_8c_source.html#l00070">neopixel_stripe.c:70</a></div></div>
+<div class="ttc" id="agroup___neo_pixel___stripe_html_ga46c58082e9d85e6503e36f0e2306bb39"><div class="ttname"><a href="group___neo_pixel___stripe.html#ga46c58082e9d85e6503e36f0e2306bb39">neopixel_color_t</a></div><div class="ttdeci">uint32_t neopixel_color_t</div><div class="ttdoc">24 bits color</div><div class="ttdef"><b>Definition</b> <a href="#l00071">neopixel_stripe.h:71</a></div></div>
+<div class="ttc" id="agroup___neo_pixel___stripe_html_ga7eda8ecf6370a5af575af2ca85eafa6d"><div class="ttname"><a href="group___neo_pixel___stripe.html#ga7eda8ecf6370a5af575af2ca85eafa6d">NeoPixelAllOff</a></div><div class="ttdeci">void NeoPixelAllOff(void)</div><div class="ttdoc">Turn off all NeoPixels.</div><div class="ttdef"><b>Definition</b> <a href="neopixel__stripe_8c_source.html#l00044">neopixel_stripe.c:44</a></div></div>
+<div class="ttc" id="agroup___neo_pixel___stripe_html_ga7f53683e3207e9523fc201bdc79b6025"><div class="ttname"><a href="group___neo_pixel___stripe.html#ga7f53683e3207e9523fc201bdc79b6025">NeoPixelSetPixel</a></div><div class="ttdeci">void NeoPixelSetPixel(uint16_t pixel, neopixel_color_t color)</div><div class="ttdoc">Set an individual pixel to a color.</div><div class="ttdef"><b>Definition</b> <a href="neopixel__stripe_8c_source.html#l00065">neopixel_stripe.c:65</a></div></div>
+<div class="ttc" id="agroup___neo_pixel___stripe_html_gaa286fdaba2147e99c24195745ad30dba"><div class="ttname"><a href="group___neo_pixel___stripe.html#gaa286fdaba2147e99c24195745ad30dba">NeoPixelRainbow</a></div><div class="ttdeci">void NeoPixelRainbow(uint16_t first_hue, uint8_t sat, uint8_t val, uint8_t reps)</div><div class="ttdoc">Set all NeoPixels with a gradient of colors.</div><div class="ttdef"><b>Definition</b> <a href="neopixel__stripe_8c_source.html#l00112">neopixel_stripe.c:112</a></div></div>
+<div class="ttc" id="agroup___neo_pixel___stripe_html_gac95515e3889b8cebd2f8bf0e72590d33"><div class="ttname"><a href="group___neo_pixel___stripe.html#gac95515e3889b8cebd2f8bf0e72590d33">NeoPixelShift</a></div><div class="ttdeci">void NeoPixelShift(bool upwards)</div><div class="ttdoc">Shift the all NeoPixel colors in the array 1 position (up or down)</div><div class="ttdef"><b>Definition</b> <a href="neopixel__stripe_8c_source.html#l00088">neopixel_stripe.c:88</a></div></div>
+<div class="ttc" id="agroup___neo_pixel___stripe_html_gacebd73c47572bd32b7f578e3dd98cc2f"><div class="ttname"><a href="group___neo_pixel___stripe.html#gacebd73c47572bd32b7f578e3dd98cc2f">NeoPixelBrightness</a></div><div class="ttdeci">void NeoPixelBrightness(uint8_t bright)</div><div class="ttdoc">Change NeoPixel brightness.</div><div class="ttdef"><b>Definition</b> <a href="neopixel__stripe_8c_source.html#l00107">neopixel_stripe.c:107</a></div></div>
+<div class="ttc" id="agroup___neo_pixel___stripe_html_gaf687598b356c6dab43afa17df8014a22"><div class="ttname"><a href="group___neo_pixel___stripe.html#gaf687598b356c6dab43afa17df8014a22">NeoPixelRgb2Color</a></div><div class="ttdeci">neopixel_color_t NeoPixelRgb2Color(uint8_t red, uint8_t green, uint8_t blue)</div><div class="ttdoc">Convert 3 individual color levels (R, G, B) to a 24bits color data.</div><div class="ttdef"><b>Definition</b> <a href="neopixel__stripe_8c_source.html#l00121">neopixel_stripe.c:121</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d9edf6c004b4a7ff14fe9ae7a92214ee.html">firmware</a></li><li class="navelem"><a class="el" href="dir_4774754e228843183aac8de48667fdde.html">drivers</a></li><li class="navelem"><a class="el" href="dir_01f3b75bad316aed7476a5f4cbb25c84.html">devices</a></li><li class="navelem"><a class="el" href="dir_ec09302fb0adc1632f5eb1743ad0d2a7.html">inc</a></li><li class="navelem"><a class="el" href="neopixel__stripe_8h.html">neopixel_stripe.h</a></li>
-    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="navelem"><a href="dir_d9edf6c004b4a7ff14fe9ae7a92214ee.html">firmware</a></li><li class="navelem"><a href="dir_4774754e228843183aac8de48667fdde.html">drivers</a></li><li class="navelem"><a href="dir_01f3b75bad316aed7476a5f4cbb25c84.html">devices</a></li><li class="navelem"><a href="dir_ec09302fb0adc1632f5eb1743ad0d2a7.html">inc</a></li><li class="navelem"><a href="neopixel__stripe_8h.html">neopixel_stripe.h</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>
 </body>

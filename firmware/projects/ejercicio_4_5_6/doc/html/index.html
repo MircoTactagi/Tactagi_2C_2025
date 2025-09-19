@@ -1,25 +1,25 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Proyecto 1: Template</title>
+<title>ejercicio_4_5_6: Sistema de Control para Display BCD Multiplexado</title>
+<link rel="icon" href="icon.ico" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-  $(document).ready(function() { init_search(); });
-/* @license-end */
+  $(function() { init_search(); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -31,21 +31,18 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fiuner.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Proyecto 1<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">ejercicio_4_5_6<span id="projectnumber">&#160;1.0</span>
    </div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
-          <img id="MSearchSelect" src="search/mag_sel.svg"
-               onmouseover="return searchBox.OnSearchSelectShow()"
-               onmouseout="return searchBox.OnSearchSelectHide()"
-               alt=""/>
-          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"
                onfocus="searchBox.OnSearchFieldFocus(true)" 
                onblur="searchBox.OnSearchFieldFocus(false)" 
                onkeyup="searchBox.OnSearchFieldChange(event)"/>
           </span><span class="right">
-            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
           </span>
         </div>
 </td>
@@ -54,11 +51,12 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Generado por Doxygen 1.9.4 -->
+<!-- Generado por Doxygen 1.14.0 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
-/* @license-end */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
 </script>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -72,10 +70,9 @@ var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
-/* @license-end */
+$(function(){initNavTree('index.html','',''); });
 </script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -86,43 +83,66 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Template </div></div>
+  <div class="headertitle"><div class="title">Sistema de Control para Display BCD Multiplexado </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="genDesc"></a>
-General Description</h1>
-<p >This section describes how the program works.</p>
-<p ><a href="https://drive.google.com/...">Operation Example</a></p>
-<h1><a class="anchor" id="hardConn"></a>
-Hardware Connection</h1>
+<div class="textblock"><h1 class="doxsection"><a class="anchor" id="genDesc"></a>
+Descripción General</h1>
+<p>Este proyecto implementa el control de un display de 7 segmentos multiplexado con codificación BCD mediante GPIOs de un microcontrolador ESP32.</p>
+<p>El sistema permite mostrar números de hasta 3 dígitos mediante multiplexación temporal, activando secuencialmente cada dígito del display.</p>
+<h1 class="doxsection"><a class="anchor" id="hardConn"></a>
+Conexiones Hardware</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadCenter">Peripheral   </th><th class="markdownTableHeadLeft">ESP32    </th></tr>
+<th class="markdownTableHeadCenter">Peripheral  </th><th class="markdownTableHeadCenter">ESP32  </th><th class="markdownTableHeadLeft">Descripción  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">PIN_X   </td><td class="markdownTableBodyLeft">GPIO_X   </td></tr>
+<td class="markdownTableBodyCenter">BCD Bit 0 (LSB)  </td><td class="markdownTableBodyCenter">GPIO_20  </td><td class="markdownTableBodyLeft">Bit menos significativo  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">BCD Bit 1  </td><td class="markdownTableBodyCenter">GPIO_21  </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">BCD Bit 2  </td><td class="markdownTableBodyCenter">GPIO_22  </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">BCD Bit 3 (MSB)  </td><td class="markdownTableBodyCenter">GPIO_23  </td><td class="markdownTableBodyLeft">Bit más significativo  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">Dígito 1  </td><td class="markdownTableBodyCenter">GPIO_19  </td><td class="markdownTableBodyLeft">Control dígito unidades  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">Dígito 2  </td><td class="markdownTableBodyCenter">GPIO_18  </td><td class="markdownTableBodyLeft">Control dígito decenas  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">Dígito 3  </td><td class="markdownTableBodyCenter">GPIO_9  </td><td class="markdownTableBodyLeft">Control dígito centenas  </td></tr>
 </table>
-<h1><a class="anchor" id="changelog"></a>
-Changelog</h1>
+<h1 class="doxsection"><a class="anchor" id="changelog"></a>
+Registro de Cambios</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadCenter">Date   </th><th class="markdownTableHeadLeft">Description    </th></tr>
+<th class="markdownTableHeadCenter">Fecha  </th><th class="markdownTableHeadLeft">Descripción  </th><th class="markdownTableHeadLeft">Autor  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">12/09/2023   </td><td class="markdownTableBodyLeft">Document creation   </td></tr>
+<td class="markdownTableBodyCenter">05/09/2025  </td><td class="markdownTableBodyLeft">Creación del archivo  </td><td class="markdownTableBodyLeft">Mirco Tactagi  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">18/09/2025  </td><td class="markdownTableBodyLeft">Mejora documentación funciones  </td><td class="markdownTableBodyLeft">Mirco Tactagi  </td></tr>
 </table>
-<dl class="section author"><dt>Autor</dt><dd>Albano Peñalva (<a href="#" onclick="location.href='mai'+'lto:'+'alb'+'an'+'o.p'+'en'+'alv'+'a@'+'une'+'r.'+'edu'+'.a'+'r'; return false;">alban<span class="obfuscator">.nosp@m.</span>o.pe<span class="obfuscator">.nosp@m.</span>nalva<span class="obfuscator">.nosp@m.</span>@une<span class="obfuscator">.nosp@m.</span>r.edu<span class="obfuscator">.nosp@m.</span>.ar</a>) </dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Mirco Tactagi (<a href="#" onclick="location.href='mai'+'lto:'+'mir'+'co'+'tac'+'ta'+'gi@'+'gm'+'ail'+'.c'+'om'; return false;">mirco<span class="obfuscator">.nosp@m.</span>tact<span class="obfuscator">.nosp@m.</span>agi@g<span class="obfuscator">.nosp@m.</span>mail<span class="obfuscator">.nosp@m.</span>.com</a>) </dd></dl>
 </div></div><!-- PageDoc -->
+<a href="doxygen_crawl.html"></a>
 </div><!-- contents -->
 </div><!-- doc-content -->
+</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>
 </body>

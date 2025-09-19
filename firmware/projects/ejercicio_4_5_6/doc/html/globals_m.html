@@ -1,25 +1,25 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Proyecto 1: Globales</title>
+<title>ejercicio_4_5_6: Globales</title>
+<link rel="icon" href="icon.ico" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-  $(document).ready(function() { init_search(); });
-/* @license-end */
+  $(function() { init_search(); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -31,21 +31,18 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fiuner.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Proyecto 1<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">ejercicio_4_5_6<span id="projectnumber">&#160;1.0</span>
    </div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
-          <img id="MSearchSelect" src="search/mag_sel.svg"
-               onmouseover="return searchBox.OnSearchSelectShow()"
-               onmouseout="return searchBox.OnSearchSelectHide()"
-               alt=""/>
-          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"
                onfocus="searchBox.OnSearchFieldFocus(true)" 
                onblur="searchBox.OnSearchFieldFocus(false)" 
                onkeyup="searchBox.OnSearchFieldChange(event)"/>
           </span><span class="right">
-            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
           </span>
         </div>
 </td>
@@ -54,11 +51,12 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Generado por Doxygen 1.9.4 -->
+<!-- Generado por Doxygen 1.14.0 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
-/* @license-end */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
 </script>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -72,10 +70,9 @@ var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); });
-/* @license-end */
+$(function(){initNavTree('globals_m.html','',''); });
 </script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -86,20 +83,27 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="contents">
-<div class="textblock">Lista de todas las funciones, variables, 'defines', enumeraciones y 'typedefs' con enlaces a los ficheros a los que corresponden:</div>
+<div class="textblock">Lista de todas las funciones, variables, «defines», enumeraciones y «typedefs» con enlaces a los archivos a los que corresponden:</div>
 
-<h3><a id="index_m" name="index_m"></a>- m -</h3><ul>
-<li>main()&#160;:&#160;<a class="el" href="projects_2ejercicio__4__5__6_2build_2bootloader_2_c_make_files_23_825_81_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">CMakeCXXCompilerId.cpp</a>, <a class="el" href="projects_2ejercicio__4__5__6_2build_2bootloader_2_c_make_files_23_825_81_2_compiler_id_c_2_c_make_c_compiler_id_8c.html#a0ddf1224851353fc92bfbff6f499fa97">CMakeCCompilerId.c</a>, <a class="el" href="drivers_2build_2_c_make_files_23_825_81_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">CMakeCXXCompilerId.cpp</a>, <a class="el" href="drivers_2build_2_c_make_files_23_825_81_2_compiler_id_c_2_c_make_c_compiler_id_8c.html#a0ddf1224851353fc92bfbff6f499fa97">CMakeCCompilerId.c</a>, <a class="el" href="projects_2ejercicio__4__5__6_2build_2_c_make_files_23_825_81_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">CMakeCXXCompilerId.cpp</a></li>
+<h3 class="doxsection"><a id="index_m" name="index_m"></a>- m -</h3><ul>
 <li>MAX_ANG&#160;:&#160;<a class="el" href="servo__sg90_8c.html#a14d0d7dac5180a42ef983d554f07d54c">servo_sg90.c</a></li>
 <li>MAX_B_SPEED&#160;:&#160;<a class="el" href="l293_8c.html#a0985a011a5c3cb2b9fbdfea4d3785cc7">l293.c</a></li>
 <li>MAX_BRIGHT&#160;:&#160;<a class="el" href="neopixel__stripe_8c.html#a9e90c85256c4f5a45a78b71c3bc73a42">neopixel_stripe.c</a></li>
 <li>MAX_CM&#160;:&#160;<a class="el" href="hc__sr04_8c.html#a297495b035c5319be312b8ff323a34ba">hc_sr04.c</a></li>
+<li>MAX_DIGITOS&#160;:&#160;<a class="el" href="ejercicio__4__5__6_8c.html#ab2ba1a0eef0e7baab183013414b9fd33">ejercicio_4_5_6.c</a></li>
 <li>MAX_F_SPEED&#160;:&#160;<a class="el" href="l293_8c.html#adb97e4c966e121b68ae86c89f36fffdc">l293.c</a></li>
 <li>MAX_HOUR&#160;:&#160;<a class="el" href="group___r_t_c.html#ga1ad2ed8c56be0837d360fc179a456c74">rtc_mcu.h</a></li>
 <li>MAX_INCH&#160;:&#160;<a class="el" href="hc__sr04_8c.html#a05ecf89678042f348a45957db338d788">hc_sr04.c</a></li>
@@ -111,10 +115,8 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 <li>MAX_US&#160;:&#160;<a class="el" href="hc__sr04_8c.html#aa6532a029eb01783785bf19751d1252d">hc_sr04.c</a></li>
 <li>MAX_VALUE_SIZE&#160;:&#160;<a class="el" href="ili9341_8c.html#a3cbe8667aff6d42a70de59c7c557727c">ili9341.c</a></li>
 <li>MAX_WDAY&#160;:&#160;<a class="el" href="group___r_t_c.html#ga006244576eec139097bc7ccf78c7e62f">rtc_mcu.h</a></li>
-<li>mbedcrypto&#160;:&#160;<a class="el" href="projects_2ejercicio__4__5__6_2build_2_c_make_cache_8txt.html#aa20c13ab01cc6336ca31bc7d2f275fad">CMakeCache.txt</a></li>
-<li>mbedx509&#160;:&#160;<a class="el" href="projects_2ejercicio__4__5__6_2build_2_c_make_cache_8txt.html#add345c8d08cad77aff0fe9a575d76a5b">CMakeCache.txt</a></li>
-<li>mem_acc_ctrl&#160;:&#160;<a class="el" href="ili9341_8c.html#a1aec16dc7650a4729f08ed5e4b529b42">ili9341.c</a></li>
 <li>MEM_ACC_CTRL&#160;:&#160;<a class="el" href="ili9341_8c.html#ae707afd6326457b82a15bdcbfd99b8a8">ili9341.c</a></li>
+<li>mem_acc_ctrl&#160;:&#160;<a class="el" href="ili9341_8c.html#a1aec16dc7650a4729f08ed5e4b529b42">ili9341.c</a></li>
 <li>MEM_WRITE&#160;:&#160;<a class="el" href="ili9341_8c.html#aabb0fea5286144a240a956114bccce7a">ili9341.c</a></li>
 <li>MIN_ANG&#160;:&#160;<a class="el" href="servo__sg90_8c.html#a7f903d11ea01f21e16f57f14974c760e">servo_sg90.c</a></li>
 <li>MIN_MS&#160;:&#160;<a class="el" href="delay__mcu_8c.html#aec16f8161ba09dac5a5bd6481efe917d">delay_mcu.c</a></li>
@@ -123,7 +125,7 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 <li>MODE1&#160;:&#160;<a class="el" href="group___s_p_i.html#gga7ddb86ccba25a168f889234061e21692ac96709e78c1f5f5e077b68b1c65d141d">spi_mcu.h</a></li>
 <li>MODE2&#160;:&#160;<a class="el" href="group___s_p_i.html#gga7ddb86ccba25a168f889234061e21692a7e24ffb02d34c2b3a679095809eafc55">spi_mcu.h</a></li>
 <li>MODE3&#160;:&#160;<a class="el" href="group___s_p_i.html#gga7ddb86ccba25a168f889234061e21692a7b316658e8633844a318cde3660e5a77">spi_mcu.h</a></li>
-<li>mostrar_numeros()&#160;:&#160;<a class="el" href="x__template_8c.html#a621a6506eeb6f682665ba6cc9f28e8a8">x_template.c</a></li>
+<li>mostrar_numeros()&#160;:&#160;<a class="el" href="ejercicio__4__5__6_8c.html#a621a6506eeb6f682665ba6cc9f28e8a8">ejercicio_4_5_6.c</a></li>
 <li>MOTOR_1&#160;:&#160;<a class="el" href="group___l293_d.html#gga88a4b61016074d859a35a819185870c5a3941188d2d90aed5042e2a4e12f5e1a0">l293.h</a></li>
 <li>MOTOR_2&#160;:&#160;<a class="el" href="group___l293_d.html#gga88a4b61016074d859a35a819185870c5a4c392a2fa3fb63f41fd473e50bf197b0">l293.h</a></li>
 <li>mouse_cmd&#160;:&#160;<a class="el" href="group___b_l_e.html#ga2a99f5333cc8031aac3511049bea8211">ble_hid_mcu.h</a></li>
@@ -227,20 +229,20 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 <li>MPU6050_getAccelerationX()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gac996d44c26dca7a5d6cbcb6478af1510">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gac996d44c26dca7a5d6cbcb6478af1510">mpu6050.c</a></li>
 <li>MPU6050_getAccelerationY()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga35fa50f9d77f7a0bf5396eca18e6cb90">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga35fa50f9d77f7a0bf5396eca18e6cb90">mpu6050.c</a></li>
 <li>MPU6050_getAccelerationZ()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga5113016af8bebd8a61c4113f7e08fcea">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga5113016af8bebd8a61c4113f7e08fcea">mpu6050.c</a></li>
-<li>MPU6050_getAccelerometerPowerOnDelay()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga25fbde279c86bd2cb34eb8dfd91cf515">mpu6050.c</a>, <a class="el" href="group___m_p_u6050.html#ga25fbde279c86bd2cb34eb8dfd91cf515">mpu6050.h</a></li>
+<li>MPU6050_getAccelerometerPowerOnDelay()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga25fbde279c86bd2cb34eb8dfd91cf515">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga25fbde279c86bd2cb34eb8dfd91cf515">mpu6050.c</a></li>
 <li>MPU6050_getAccelFIFOEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gaff13e3ae74db4a71c8c76cdab0b002b0">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gaff13e3ae74db4a71c8c76cdab0b002b0">mpu6050.c</a></li>
 <li>MPU6050_getAccelXSelfTest()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga2ca9e94e5d10ad5ac6b0dcbcdc0e99e9">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga2ca9e94e5d10ad5ac6b0dcbcdc0e99e9">mpu6050.c</a></li>
 <li>MPU6050_getAccelXSelfTestFactoryTrim()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga046b9ec225a9b0409a96ce1d52d60962">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga046b9ec225a9b0409a96ce1d52d60962">mpu6050.c</a></li>
 <li>MPU6050_getAccelYSelfTest()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga40cab1382b3cb84f61f21f5860a1d3d5">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga40cab1382b3cb84f61f21f5860a1d3d5">mpu6050.c</a></li>
 <li>MPU6050_getAccelYSelfTestFactoryTrim()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gaa41f855ca9aa84fdc71482eed8982382">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gaa41f855ca9aa84fdc71482eed8982382">mpu6050.c</a></li>
-<li>MPU6050_getAccelZSelfTest()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga18b47082b381fc5f40426171ab4eef7f">mpu6050.c</a>, <a class="el" href="group___m_p_u6050.html#ga18b47082b381fc5f40426171ab4eef7f">mpu6050.h</a></li>
+<li>MPU6050_getAccelZSelfTest()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga18b47082b381fc5f40426171ab4eef7f">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga18b47082b381fc5f40426171ab4eef7f">mpu6050.c</a></li>
 <li>MPU6050_getAccelZSelfTestFactoryTrim()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gafb1a2864a0e52a62395eb21fa807f551">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gafb1a2864a0e52a62395eb21fa807f551">mpu6050.c</a></li>
 <li>MPU6050_getAuxVDDIOLevel()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga348db70e788c76a40539599570fe6023">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga348db70e788c76a40539599570fe6023">mpu6050.c</a></li>
 <li>MPU6050_getClockOutputEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gad77bc68ea5f3fc16538153e14be22875">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gad77bc68ea5f3fc16538153e14be22875">mpu6050.c</a></li>
 <li>MPU6050_getClockSource()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga8f52c1db81f95ee606ff6479326cc902">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga8f52c1db81f95ee606ff6479326cc902">mpu6050.c</a></li>
 <li>MPU6050_getDeviceID()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga07946cc8d97bab361062a28c841cb5f6">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga07946cc8d97bab361062a28c841cb5f6">mpu6050.c</a></li>
 <li>MPU6050_getDHPFMode()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga9da93ad1bb5e5151aca04a426c8c4b3f">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga9da93ad1bb5e5151aca04a426c8c4b3f">mpu6050.c</a></li>
-<li>MPU6050_getDLPFMode()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga688327d65d49afcb4a0d89c93b8564d3">mpu6050.c</a>, <a class="el" href="group___m_p_u6050.html#ga688327d65d49afcb4a0d89c93b8564d3">mpu6050.h</a></li>
+<li>MPU6050_getDLPFMode()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga688327d65d49afcb4a0d89c93b8564d3">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga688327d65d49afcb4a0d89c93b8564d3">mpu6050.c</a></li>
 <li>MPU6050_getExternalFrameSync()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga3099d53bc2bb5478dc27ef72f829ab75">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga3099d53bc2bb5478dc27ef72f829ab75">mpu6050.c</a></li>
 <li>MPU6050_getExternalSensorByte()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gaa0a358a189bf835031933a0154e8c43a">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gaa0a358a189bf835031933a0154e8c43a">mpu6050.c</a></li>
 <li>MPU6050_getExternalSensorDWord()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga24945abe7d55a6ca973df3bf824bff15">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga24945abe7d55a6ca973df3bf824bff15">mpu6050.c</a></li>
@@ -252,7 +254,7 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 <li>MPU6050_getFIFOEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gaec82423a5a42b279c018f213b4e74d9c">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gaec82423a5a42b279c018f213b4e74d9c">mpu6050.c</a></li>
 <li>MPU6050_getFreefallDetectionCounterDecrement()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga6ec5e3438f3ba8bddcf28563b6cde74a">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga6ec5e3438f3ba8bddcf28563b6cde74a">mpu6050.c</a></li>
 <li>MPU6050_getFreefallDetectionDuration()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gab9708af75739a847c2187dcf3e3ab422">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gab9708af75739a847c2187dcf3e3ab422">mpu6050.c</a></li>
-<li>MPU6050_getFreefallDetectionThreshold()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga92ac80b3753476a7fe9a07df0de06d00">mpu6050.c</a>, <a class="el" href="group___m_p_u6050.html#ga92ac80b3753476a7fe9a07df0de06d00">mpu6050.h</a></li>
+<li>MPU6050_getFreefallDetectionThreshold()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga92ac80b3753476a7fe9a07df0de06d00">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga92ac80b3753476a7fe9a07df0de06d00">mpu6050.c</a></li>
 <li>MPU6050_getFSyncInterruptEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gad18d4d289c2c9ac1645dea4e6e1f1570">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gad18d4d289c2c9ac1645dea4e6e1f1570">mpu6050.c</a></li>
 <li>MPU6050_getFSyncInterruptLevel()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga8d18af7d1db2f888135aa0ff33b871df">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga8d18af7d1db2f888135aa0ff33b871df">mpu6050.c</a></li>
 <li>MPU6050_getFullScaleAccelRange()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga3acc5b8a6dd2e99bea903441e16d2ea9">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga3acc5b8a6dd2e99bea903441e16d2ea9">mpu6050.c</a></li>
@@ -272,13 +274,13 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 <li>MPU6050_getIntFIFOBufferOverflowEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga1bb816d5a6941f27542e17475647bc01">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga1bb816d5a6941f27542e17475647bc01">mpu6050.c</a></li>
 <li>MPU6050_getIntFIFOBufferOverflowStatus()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga3e76529d4f540bee5664e132ac11e885">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga3e76529d4f540bee5664e132ac11e885">mpu6050.c</a></li>
 <li>MPU6050_getIntFreefallEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga308195e365d8ea74deacf659e047b838">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga308195e365d8ea74deacf659e047b838">mpu6050.c</a></li>
-<li>MPU6050_getIntFreefallStatus()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gaf6b2feb7896f3d160e63b399b3216e76">mpu6050.c</a>, <a class="el" href="group___m_p_u6050.html#gaf6b2feb7896f3d160e63b399b3216e76">mpu6050.h</a></li>
+<li>MPU6050_getIntFreefallStatus()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gaf6b2feb7896f3d160e63b399b3216e76">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gaf6b2feb7896f3d160e63b399b3216e76">mpu6050.c</a></li>
 <li>MPU6050_getIntI2CMasterEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gab543c63b16a530d499afd59a7c8607ae">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gab543c63b16a530d499afd59a7c8607ae">mpu6050.c</a></li>
 <li>MPU6050_getIntI2CMasterStatus()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gaccd465944282472d808ee580ca9f0e13">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gaccd465944282472d808ee580ca9f0e13">mpu6050.c</a></li>
 <li>MPU6050_getIntMotionEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga79d0410aaf581d03bf1d58056f225563">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga79d0410aaf581d03bf1d58056f225563">mpu6050.c</a></li>
 <li>MPU6050_getIntMotionStatus()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gac0c1d79d434f1405c3fae4053ae19ac2">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gac0c1d79d434f1405c3fae4053ae19ac2">mpu6050.c</a></li>
 <li>MPU6050_getIntStatus()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga96b955f0af5d7c13ae9fa1f97e79af02">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga96b955f0af5d7c13ae9fa1f97e79af02">mpu6050.c</a></li>
-<li>MPU6050_getIntZeroMotionEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga82b60bc96683839aa0de91a809d83c6f">mpu6050.c</a>, <a class="el" href="group___m_p_u6050.html#ga82b60bc96683839aa0de91a809d83c6f">mpu6050.h</a></li>
+<li>MPU6050_getIntZeroMotionEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga82b60bc96683839aa0de91a809d83c6f">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga82b60bc96683839aa0de91a809d83c6f">mpu6050.c</a></li>
 <li>MPU6050_getIntZeroMotionStatus()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga9f868595479662870c4b9d71540d4190">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga9f868595479662870c4b9d71540d4190">mpu6050.c</a></li>
 <li>MPU6050_getLostArbitration()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gadb14bf99bd1e4bfb131c2b8625c7a123">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gadb14bf99bd1e4bfb131c2b8625c7a123">mpu6050.c</a></li>
 <li>MPU6050_getMasterClockSpeed()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gaca3d024745a0a31623474ee2f50042cd">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gaca3d024745a0a31623474ee2f50042cd">mpu6050.c</a></li>
@@ -296,13 +298,13 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 <li>MPU6050_getRotationY()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gaafa46df86ca7ae1b00b251bd8b6a729d">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gaafa46df86ca7ae1b00b251bd8b6a729d">mpu6050.c</a></li>
 <li>MPU6050_getRotationZ()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga864fa1c093eb989cb27cc4476fbf8344">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga864fa1c093eb989cb27cc4476fbf8344">mpu6050.c</a></li>
 <li>MPU6050_getSlate4InputByte()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gaaef69aa155595af9e0faad96f96fe473">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gaaef69aa155595af9e0faad96f96fe473">mpu6050.c</a></li>
-<li>MPU6050_getSlave0FIFOEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga6f868243da42fba3551636400745347c">mpu6050.c</a>, <a class="el" href="group___m_p_u6050.html#ga6f868243da42fba3551636400745347c">mpu6050.h</a></li>
+<li>MPU6050_getSlave0FIFOEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga6f868243da42fba3551636400745347c">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga6f868243da42fba3551636400745347c">mpu6050.c</a></li>
 <li>MPU6050_getSlave0Nack()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga8f68a493491983ddcec7b45764ee75ce">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga8f68a493491983ddcec7b45764ee75ce">mpu6050.c</a></li>
 <li>MPU6050_getSlave1FIFOEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga2fba02d7f083fe1e5b2f5e861cf0fcb1">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga2fba02d7f083fe1e5b2f5e861cf0fcb1">mpu6050.c</a></li>
 <li>MPU6050_getSlave1Nack()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga45848753825aa08534e577ef4c88f305">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga45848753825aa08534e577ef4c88f305">mpu6050.c</a></li>
 <li>MPU6050_getSlave2FIFOEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gaff7b95a392566710d325d91b20d83aaa">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gaff7b95a392566710d325d91b20d83aaa">mpu6050.c</a></li>
 <li>MPU6050_getSlave2Nack()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gabc788141cc8c6102a9ffc64f1ffe2f34">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gabc788141cc8c6102a9ffc64f1ffe2f34">mpu6050.c</a></li>
-<li>MPU6050_getSlave3FIFOEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gae9fcc5c19cb562c4878eda32faa28c8a">mpu6050.c</a>, <a class="el" href="group___m_p_u6050.html#gae9fcc5c19cb562c4878eda32faa28c8a">mpu6050.h</a></li>
+<li>MPU6050_getSlave3FIFOEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gae9fcc5c19cb562c4878eda32faa28c8a">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gae9fcc5c19cb562c4878eda32faa28c8a">mpu6050.c</a></li>
 <li>MPU6050_getSlave3Nack()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga970f07a4e7ad116204c09aace4275eb4">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga970f07a4e7ad116204c09aace4275eb4">mpu6050.c</a></li>
 <li>MPU6050_getSlave4Address()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga60c60e0c0e7d04261ed836dcec617aea">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga60c60e0c0e7d04261ed836dcec617aea">mpu6050.c</a></li>
 <li>MPU6050_getSlave4Enabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga1ea13e6bff9eca91e30be795a4306390">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga1ea13e6bff9eca91e30be795a4306390">mpu6050.c</a></li>
@@ -321,13 +323,13 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 <li>MPU6050_getSlaveWordByteSwap()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gab72945cb0bc0ac86ee27d3faedbd432a">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gab72945cb0bc0ac86ee27d3faedbd432a">mpu6050.c</a></li>
 <li>MPU6050_getSlaveWordGroupOffset()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga1cd87f24d77ef2f077ca7a04422ff8b3">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga1cd87f24d77ef2f077ca7a04422ff8b3">mpu6050.c</a></li>
 <li>MPU6050_getSlaveWriteMode()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga1927f50c18288bebe6683a3e74b08fa5">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga1927f50c18288bebe6683a3e74b08fa5">mpu6050.c</a></li>
-<li>MPU6050_getSleepEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga20025f971e7956723b9f8ca23e565694">mpu6050.c</a>, <a class="el" href="group___m_p_u6050.html#ga20025f971e7956723b9f8ca23e565694">mpu6050.h</a></li>
+<li>MPU6050_getSleepEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga20025f971e7956723b9f8ca23e565694">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga20025f971e7956723b9f8ca23e565694">mpu6050.c</a></li>
 <li>MPU6050_getStandbyXAccelEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gab1de7d86ff645c9c29cd3ef1b4184e72">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gab1de7d86ff645c9c29cd3ef1b4184e72">mpu6050.c</a></li>
 <li>MPU6050_getStandbyXGyroEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga72f1015797c248222ac15b1561c0ed47">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga72f1015797c248222ac15b1561c0ed47">mpu6050.c</a></li>
 <li>MPU6050_getStandbyYAccelEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga86005a55afa61890062efa3a0d7ffb12">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga86005a55afa61890062efa3a0d7ffb12">mpu6050.c</a></li>
 <li>MPU6050_getStandbyYGyroEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga213a533a7baf3afe916fd6d7d73c4ec1">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga213a533a7baf3afe916fd6d7d73c4ec1">mpu6050.c</a></li>
 <li>MPU6050_getStandbyZAccelEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gabd8350e71a0700f89aa6d13a43c1e19a">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gabd8350e71a0700f89aa6d13a43c1e19a">mpu6050.c</a></li>
-<li>MPU6050_getStandbyZGyroEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga3352704b2d12c42b06c3ae5b21e9a97c">mpu6050.c</a>, <a class="el" href="group___m_p_u6050.html#ga3352704b2d12c42b06c3ae5b21e9a97c">mpu6050.h</a></li>
+<li>MPU6050_getStandbyZGyroEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga3352704b2d12c42b06c3ae5b21e9a97c">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga3352704b2d12c42b06c3ae5b21e9a97c">mpu6050.c</a></li>
 <li>MPU6050_getTemperature()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga200269674699d3323e17e0e501f906cd">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga200269674699d3323e17e0e501f906cd">mpu6050.c</a></li>
 <li>MPU6050_getTempFIFOEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga40bccf492b39300ce9539ea0e419c385">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga40bccf492b39300ce9539ea0e419c385">mpu6050.c</a></li>
 <li>MPU6050_getTempSensorEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gac5ddf73e3767bce619f9026dfc4c7003">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gac5ddf73e3767bce619f9026dfc4c7003">mpu6050.c</a></li>
@@ -345,7 +347,7 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 <li>MPU6050_getZeroMotionDetectionThreshold()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga6245519f5a269c815695b0f21cd41441">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga6245519f5a269c815695b0f21cd41441">mpu6050.c</a></li>
 <li>MPU6050_getZGyroFIFOEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga17854f306c372e0a589e3e0f2378a676">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga17854f306c372e0a589e3e0f2378a676">mpu6050.c</a></li>
 <li>MPU6050_getZNegMotionDetected()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gac61eb1f9ec468b3f456da47209a2832c">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gac61eb1f9ec468b3f456da47209a2832c">mpu6050.c</a></li>
-<li>MPU6050_getZPosMotionDetected()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga79f827df99aeb8b0007afd70e43a6a3a">mpu6050.c</a>, <a class="el" href="group___m_p_u6050.html#ga79f827df99aeb8b0007afd70e43a6a3a">mpu6050.h</a></li>
+<li>MPU6050_getZPosMotionDetected()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga79f827df99aeb8b0007afd70e43a6a3a">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga79f827df99aeb8b0007afd70e43a6a3a">mpu6050.c</a></li>
 <li>MPU6050_GYRO_FS_1000&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gaece25806948f2455a1e2c1895b4583b0">mpu6050.h</a></li>
 <li>MPU6050_GYRO_FS_2000&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga51162889c2f7d3ada6d181110cabb8ab">mpu6050.h</a></li>
 <li>MPU6050_GYRO_FS_250&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gaac5b35a3fa5792b38fe7118bc72fb442">mpu6050.h</a></li>
@@ -370,7 +372,7 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 <li>MPU6050_I2C_SLV_LEN_LENGTH&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga217150e945314ff816e18da341f722df">mpu6050.h</a></li>
 <li>MPU6050_I2C_SLV_REG_DIS_BIT&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga673cc147c62400d23d1f543d9c2840f0">mpu6050.h</a></li>
 <li>MPU6050_I2C_SLV_RW_BIT&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga9826becbd0002bfa200d25690e92e126">mpu6050.h</a></li>
-<li>MPU6050_initialize()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga20a6f9d62b8c368a5d2bd23bc6c09a47">mpu6050.c</a>, <a class="el" href="group___m_p_u6050.html#ga20a6f9d62b8c368a5d2bd23bc6c09a47">mpu6050.h</a></li>
+<li>MPU6050_initialize()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga20a6f9d62b8c368a5d2bd23bc6c09a47">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga20a6f9d62b8c368a5d2bd23bc6c09a47">mpu6050.c</a></li>
 <li>MPU6050_INTCFG_CLKOUT_EN_BIT&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gaf6f983ee1d32777d725f259c7806f15a">mpu6050.h</a></li>
 <li>MPU6050_INTCFG_FSYNC_INT_EN_BIT&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga39963ea6d8b9cbeebc4daf40f8872fed">mpu6050.h</a></li>
 <li>MPU6050_INTCFG_FSYNC_INT_LEVEL_BIT&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga1696357738f5b7e4bc50ec4170be3324">mpu6050.h</a></li>
@@ -579,13 +581,13 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 <li>MPU6050_setDeviceID()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gac1940478f064230ee503daba0ba2f181">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gac1940478f064230ee503daba0ba2f181">mpu6050.c</a></li>
 <li>MPU6050_setDHPFMode()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga6c62598dc161f8055000493d2379f8f6">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga6c62598dc161f8055000493d2379f8f6">mpu6050.c</a></li>
 <li>MPU6050_setDLPFMode()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga45df54d78cf3afa33dd63a463749ffa4">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga45df54d78cf3afa33dd63a463749ffa4">mpu6050.c</a></li>
-<li>MPU6050_setExternalFrameSync()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gad9e6cfac4c344724e670a33bc063218d">mpu6050.c</a>, <a class="el" href="group___m_p_u6050.html#gad9e6cfac4c344724e670a33bc063218d">mpu6050.h</a></li>
+<li>MPU6050_setExternalFrameSync()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gad9e6cfac4c344724e670a33bc063218d">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gad9e6cfac4c344724e670a33bc063218d">mpu6050.c</a></li>
 <li>MPU6050_setExternalShadowDelayEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gaeff20085db1bc690e806c72f5db10f47">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gaeff20085db1bc690e806c72f5db10f47">mpu6050.c</a></li>
 <li>MPU6050_setFIFOByte()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga49876a11c424470f81310133d3002051">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga49876a11c424470f81310133d3002051">mpu6050.c</a></li>
 <li>MPU6050_setFIFOEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gaa2a31d9771b07506241bbe69256cb299">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gaa2a31d9771b07506241bbe69256cb299">mpu6050.c</a></li>
 <li>MPU6050_setFreefallDetectionCounterDecrement()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gace085b328f4b05c8b6656651ea798bd9">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gace085b328f4b05c8b6656651ea798bd9">mpu6050.c</a></li>
 <li>MPU6050_setFreefallDetectionDuration()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gaa89c6ac6bb68e46a8114a609d2d84c17">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gaa89c6ac6bb68e46a8114a609d2d84c17">mpu6050.c</a></li>
-<li>MPU6050_setFreefallDetectionThreshold()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga62159eb27d6f68aefa2485639893476c">mpu6050.c</a>, <a class="el" href="group___m_p_u6050.html#ga62159eb27d6f68aefa2485639893476c">mpu6050.h</a></li>
+<li>MPU6050_setFreefallDetectionThreshold()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga62159eb27d6f68aefa2485639893476c">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga62159eb27d6f68aefa2485639893476c">mpu6050.c</a></li>
 <li>MPU6050_setFSyncInterruptEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga21446e36e69409099a3da8258ed7eba4">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga21446e36e69409099a3da8258ed7eba4">mpu6050.c</a></li>
 <li>MPU6050_setFSyncInterruptLevel()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga1af73c0d8eee070024403206a61c3908">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga1af73c0d8eee070024403206a61c3908">mpu6050.c</a></li>
 <li>MPU6050_setFullScaleAccelRange()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gaed9582371a077c479eef207c04129369">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gaed9582371a077c479eef207c04129369">mpu6050.c</a></li>
@@ -603,19 +605,19 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 <li>MPU6050_setIntI2CMasterEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gad044cab4e1274da18195fe44bde313c9">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gad044cab4e1274da18195fe44bde313c9">mpu6050.c</a></li>
 <li>MPU6050_setIntMotionEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga33448168ad44d3d4d55ecbc5f4ea6b98">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga33448168ad44d3d4d55ecbc5f4ea6b98">mpu6050.c</a></li>
 <li>MPU6050_setIntZeroMotionEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gae94047a94db6780413b0d3c0baadae13">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gae94047a94db6780413b0d3c0baadae13">mpu6050.c</a></li>
-<li>MPU6050_setMasterClockSpeed()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga292467acfc4d23c30099de4f9076e0ae">mpu6050.c</a>, <a class="el" href="group___m_p_u6050.html#ga292467acfc4d23c30099de4f9076e0ae">mpu6050.h</a></li>
+<li>MPU6050_setMasterClockSpeed()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga292467acfc4d23c30099de4f9076e0ae">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga292467acfc4d23c30099de4f9076e0ae">mpu6050.c</a></li>
 <li>MPU6050_setMotionDetectionCounterDecrement()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga97af8c0655ed75fca093dff7885911f6">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga97af8c0655ed75fca093dff7885911f6">mpu6050.c</a></li>
 <li>MPU6050_setMotionDetectionDuration()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gaaa0e065cdc47b712a864a54674a732c7">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gaaa0e065cdc47b712a864a54674a732c7">mpu6050.c</a></li>
 <li>MPU6050_setMotionDetectionThreshold()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga0d9824e1a183bbd78055a0eda6c723cf">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga0d9824e1a183bbd78055a0eda6c723cf">mpu6050.c</a></li>
 <li>MPU6050_setMultiMasterEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga8726accf2a819202ceaa3346e2ebfbe6">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga8726accf2a819202ceaa3346e2ebfbe6">mpu6050.c</a></li>
 <li>MPU6050_setRate()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga36749d09ea90afd47fe961cc825f1522">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga36749d09ea90afd47fe961cc825f1522">mpu6050.c</a></li>
-<li>MPU6050_setSlave0FIFOEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga1aee9de0f198bad6fe05b15715b01a44">mpu6050.c</a>, <a class="el" href="group___m_p_u6050.html#ga1aee9de0f198bad6fe05b15715b01a44">mpu6050.h</a></li>
+<li>MPU6050_setSlave0FIFOEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga1aee9de0f198bad6fe05b15715b01a44">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga1aee9de0f198bad6fe05b15715b01a44">mpu6050.c</a></li>
 <li>MPU6050_setSlave1FIFOEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga2f8377484d25b4d9a485da1a828ddab5">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga2f8377484d25b4d9a485da1a828ddab5">mpu6050.c</a></li>
 <li>MPU6050_setSlave2FIFOEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga8e3d84243949de1baed7174125f8eeec">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga8e3d84243949de1baed7174125f8eeec">mpu6050.c</a></li>
 <li>MPU6050_setSlave3FIFOEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga4384421f25dd4b2871efc0f39159e6b3">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga4384421f25dd4b2871efc0f39159e6b3">mpu6050.c</a></li>
 <li>MPU6050_setSlave4Address()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gaa4ce586ebe9a063fb4e41a27d1fe8f63">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gaa4ce586ebe9a063fb4e41a27d1fe8f63">mpu6050.c</a></li>
 <li>MPU6050_setSlave4Enabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gaf8ac0707c1c45b37de2c89a6d429fdb0">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gaf8ac0707c1c45b37de2c89a6d429fdb0">mpu6050.c</a></li>
-<li>MPU6050_setSlave4InterruptEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gafd62c0bc48220f9b69a7915f8023b040">mpu6050.c</a>, <a class="el" href="group___m_p_u6050.html#gafd62c0bc48220f9b69a7915f8023b040">mpu6050.h</a></li>
+<li>MPU6050_setSlave4InterruptEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gafd62c0bc48220f9b69a7915f8023b040">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gafd62c0bc48220f9b69a7915f8023b040">mpu6050.c</a></li>
 <li>MPU6050_setSlave4MasterDelay()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gaa3a72d5a271d4f4f0da12ec5d3c138a0">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gaa3a72d5a271d4f4f0da12ec5d3c138a0">mpu6050.c</a></li>
 <li>MPU6050_setSlave4OutputByte()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gacc94f1acc123e7d72a5e5ee35955b026">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gacc94f1acc123e7d72a5e5ee35955b026">mpu6050.c</a></li>
 <li>MPU6050_setSlave4Register()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gae071cedddf05e3792b67a23ba5036d36">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gae071cedddf05e3792b67a23ba5036d36">mpu6050.c</a></li>
@@ -628,19 +630,19 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 <li>MPU6050_setSlaveReadWriteTransitionEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga36fe7bd82ca253fb6d7b3e8cefada0e3">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga36fe7bd82ca253fb6d7b3e8cefada0e3">mpu6050.c</a></li>
 <li>MPU6050_setSlaveRegister()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gad6db0569f9038fbc0380efe2c4d0878f">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gad6db0569f9038fbc0380efe2c4d0878f">mpu6050.c</a></li>
 <li>MPU6050_setSlaveWordByteSwap()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gafb871094dba906e71eb4b3f8658e7f37">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gafb871094dba906e71eb4b3f8658e7f37">mpu6050.c</a></li>
-<li>MPU6050_setSlaveWordGroupOffset()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga9f009e11c66c8b569028d2e3b2923160">mpu6050.c</a>, <a class="el" href="group___m_p_u6050.html#ga9f009e11c66c8b569028d2e3b2923160">mpu6050.h</a></li>
+<li>MPU6050_setSlaveWordGroupOffset()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga9f009e11c66c8b569028d2e3b2923160">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga9f009e11c66c8b569028d2e3b2923160">mpu6050.c</a></li>
 <li>MPU6050_setSlaveWriteMode()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gadc5e2485f37099b9990c64d07ee39f37">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gadc5e2485f37099b9990c64d07ee39f37">mpu6050.c</a></li>
 <li>MPU6050_setSleepEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga8fd47633da37e117b1715933ec111fdd">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga8fd47633da37e117b1715933ec111fdd">mpu6050.c</a></li>
 <li>MPU6050_setStandbyXAccelEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga1eec1bc9522e0a9a0410d2d27e63e98e">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga1eec1bc9522e0a9a0410d2d27e63e98e">mpu6050.c</a></li>
 <li>MPU6050_setStandbyXGyroEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga40bb8d14c12504677b3e08071bd1940c">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga40bb8d14c12504677b3e08071bd1940c">mpu6050.c</a></li>
 <li>MPU6050_setStandbyYAccelEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gad9352c04f85ab87164e8871d5998a75a">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gad9352c04f85ab87164e8871d5998a75a">mpu6050.c</a></li>
-<li>MPU6050_setStandbyYGyroEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gaffe5dd20c828775c31854cbcae919ef9">mpu6050.c</a>, <a class="el" href="group___m_p_u6050.html#gaffe5dd20c828775c31854cbcae919ef9">mpu6050.h</a></li>
+<li>MPU6050_setStandbyYGyroEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gaffe5dd20c828775c31854cbcae919ef9">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gaffe5dd20c828775c31854cbcae919ef9">mpu6050.c</a></li>
 <li>MPU6050_setStandbyZAccelEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gaf59fa51ad2e096ee9ffb5ece50f3b107">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gaf59fa51ad2e096ee9ffb5ece50f3b107">mpu6050.c</a></li>
 <li>MPU6050_setStandbyZGyroEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga7f2740e8d962dcbfbd58a134111ad76c">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga7f2740e8d962dcbfbd58a134111ad76c">mpu6050.c</a></li>
 <li>MPU6050_setTempFIFOEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga7c7284b9107a885f21fa7fbfc1d918ef">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga7c7284b9107a885f21fa7fbfc1d918ef">mpu6050.c</a></li>
 <li>MPU6050_setTempSensorEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga7ef3e72f5de0daaec883a4f1440350ce">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga7ef3e72f5de0daaec883a4f1440350ce">mpu6050.c</a></li>
 <li>MPU6050_setWaitForExternalSensorEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga3099d31566c5bfa7141735aa14cd23c5">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga3099d31566c5bfa7141735aa14cd23c5">mpu6050.c</a></li>
-<li>MPU6050_setWakeCycleEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga90fc7e6badb1536f04b52785ceb266e8">mpu6050.c</a>, <a class="el" href="group___m_p_u6050.html#ga90fc7e6badb1536f04b52785ceb266e8">mpu6050.h</a></li>
+<li>MPU6050_setWakeCycleEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga90fc7e6badb1536f04b52785ceb266e8">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga90fc7e6badb1536f04b52785ceb266e8">mpu6050.c</a></li>
 <li>MPU6050_setWakeFrequency()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga8d6a209c19e3673c444779cbe0586ed1">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga8d6a209c19e3673c444779cbe0586ed1">mpu6050.c</a></li>
 <li>MPU6050_setXGyroFIFOEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gafbaf34c4d69ae4bfe093573e4ae8789c">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gafbaf34c4d69ae4bfe093573e4ae8789c">mpu6050.c</a></li>
 <li>MPU6050_setYGyroFIFOEnabled()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga5895d582bc3bf70985fcc3b65b3181ea">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#ga5895d582bc3bf70985fcc3b65b3181ea">mpu6050.c</a></li>
@@ -657,7 +659,7 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 <li>MPU6050_TC_OTP_BNK_VLD_BIT&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga9640cbeb0cb15ccac6f62721ccde7e6c">mpu6050.h</a></li>
 <li>MPU6050_TC_PWR_MODE_BIT&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga0f89d8196e6739bb626d92cba3a96628">mpu6050.h</a></li>
 <li>MPU6050_TEMP_FIFO_EN_BIT&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga817ed1eb65de563dceb35fed3e2ebd08">mpu6050.h</a></li>
-<li>MPU6050_testConnection()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gaa67a00fa91990b91552f68e1b8acfa9c">mpu6050.c</a>, <a class="el" href="group___m_p_u6050.html#gaa67a00fa91990b91552f68e1b8acfa9c">mpu6050.h</a></li>
+<li>MPU6050_testConnection()&#160;:&#160;<a class="el" href="group___m_p_u6050.html#gaa67a00fa91990b91552f68e1b8acfa9c">mpu6050.h</a>, <a class="el" href="group___m_p_u6050.html#gaa67a00fa91990b91552f68e1b8acfa9c">mpu6050.c</a></li>
 <li>MPU6050_USERCTRL_DMP_EN_BIT&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga64a5c31028811ba96a8dc0d9eb02d304">mpu6050.h</a></li>
 <li>MPU6050_USERCTRL_DMP_RESET_BIT&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga48ebc61e42fb37e13be19869c7391e7a">mpu6050.h</a></li>
 <li>MPU6050_USERCTRL_FIFO_EN_BIT&#160;:&#160;<a class="el" href="group___m_p_u6050.html#ga4d287b028bfb7d4f40a8da106ed74d66">mpu6050.h</a></li>
@@ -685,10 +687,11 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>
 </body>

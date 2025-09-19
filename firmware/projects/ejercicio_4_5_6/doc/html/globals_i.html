@@ -1,25 +1,25 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Proyecto 1: Globales</title>
+<title>ejercicio_4_5_6: Globales</title>
+<link rel="icon" href="icon.ico" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-  $(document).ready(function() { init_search(); });
-/* @license-end */
+  $(function() { init_search(); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -31,21 +31,18 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fiuner.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Proyecto 1<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">ejercicio_4_5_6<span id="projectnumber">&#160;1.0</span>
    </div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
-          <img id="MSearchSelect" src="search/mag_sel.svg"
-               onmouseover="return searchBox.OnSearchSelectShow()"
-               onmouseout="return searchBox.OnSearchSelectHide()"
-               alt=""/>
-          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"
                onfocus="searchBox.OnSearchFieldFocus(true)" 
                onblur="searchBox.OnSearchFieldFocus(false)" 
                onkeyup="searchBox.OnSearchFieldChange(event)"/>
           </span><span class="right">
-            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
           </span>
         </div>
 </td>
@@ -54,11 +51,12 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Generado por Doxygen 1.9.4 -->
+<!-- Generado por Doxygen 1.14.0 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
-/* @license-end */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
 </script>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -72,10 +70,9 @@ var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('globals_i.html',''); initResizable(); });
-/* @license-end */
+$(function(){initNavTree('globals_i.html','',''); });
 </script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -86,17 +83,24 @@ $(document).ready(function(){initNavTree('globals_i.html',''); initResizable(); 
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="contents">
-<div class="textblock">Lista de todas las funciones, variables, 'defines', enumeraciones y 'typedefs' con enlaces a los ficheros a los que corresponden:</div>
+<div class="textblock">Lista de todas las funciones, variables, «defines», enumeraciones y «typedefs» con enlaces a los archivos a los que corresponden:</div>
 
-<h3><a id="index_i" name="index_i"></a>- i -</h3><ul>
-<li>I2C_enable()&#160;:&#160;<a class="el" href="group___i2_c.html#ga7dba17bc71077c236ff1e4af407448a7">i2c_mcu.c</a>, <a class="el" href="group___i2_c.html#ga7dba17bc71077c236ff1e4af407448a7">i2c_mcu.h</a></li>
-<li>I2C_initialize()&#160;:&#160;<a class="el" href="group___i2_c.html#gae2cec986d327013569df22dd2945ff58">i2c_mcu.c</a>, <a class="el" href="group___i2_c.html#gae2cec986d327013569df22dd2945ff58">i2c_mcu.h</a></li>
+<h3 class="doxsection"><a id="index_i" name="index_i"></a>- i -</h3><ul>
+<li>I2C_enable()&#160;:&#160;<a class="el" href="group___i2_c.html#gafbff174e11a59e45e12cbfa5044d8233">i2c_mcu.h</a>, <a class="el" href="group___i2_c.html#gafbff174e11a59e45e12cbfa5044d8233">i2c_mcu.c</a></li>
+<li>I2C_initialize()&#160;:&#160;<a class="el" href="group___i2_c.html#ga560ffec35071f9f2427fb89cb1518063">i2c_mcu.h</a>, <a class="el" href="group___i2_c.html#ga560ffec35071f9f2427fb89cb1518063">i2c_mcu.c</a></li>
 <li>I2C_MASTER_FREQ_HZ&#160;:&#160;<a class="el" href="group___i2_c.html#ga5c22ca4de37a83a59014e48b0a0b043d">i2c_mcu.h</a></li>
 <li>I2C_MASTER_NUM&#160;:&#160;<a class="el" href="group___i2_c.html#gaab9e642b6200f95fcbd2ad7466aaa2d3">i2c_mcu.h</a></li>
 <li>I2C_MASTER_RX_BUF_DISABLE&#160;:&#160;<a class="el" href="group___i2_c.html#ga37a0707200e50e3b3e9ab28b1b8d6777">i2c_mcu.h</a></li>
@@ -105,16 +109,16 @@ $(document).ready(function(){initNavTree('globals_i.html',''); initResizable(); 
 <li>I2C_MASTER_TIMEOUT_MS&#160;:&#160;<a class="el" href="group___i2_c.html#ga7ebc0bc57afc33bd33967be8479690db">i2c_mcu.h</a></li>
 <li>I2C_MASTER_TX_BUF_DISABLE&#160;:&#160;<a class="el" href="group___i2_c.html#gaaa0e84f340ef5ea9db2d7624fdadaa26">i2c_mcu.h</a></li>
 <li>I2C_NUM&#160;:&#160;<a class="el" href="mpu6050_8c.html#ad4a5ae6760ae60ffc730f60541657628">mpu6050.c</a>, <a class="el" href="i2c__mcu_8c.html#ad4a5ae6760ae60ffc730f60541657628">i2c_mcu.c</a></li>
-<li>I2C_readBit()&#160;:&#160;<a class="el" href="group___i2_c.html#ga9ff51515a73e2748e863f88b94453806">i2c_mcu.h</a>, <a class="el" href="group___i2_c.html#ga9ff51515a73e2748e863f88b94453806">i2c_mcu.c</a></li>
-<li>I2C_readBits()&#160;:&#160;<a class="el" href="group___i2_c.html#ga45576a616bac63831ccbb0d803e02937">i2c_mcu.h</a>, <a class="el" href="group___i2_c.html#ga45576a616bac63831ccbb0d803e02937">i2c_mcu.c</a></li>
-<li>I2C_readByte()&#160;:&#160;<a class="el" href="group___i2_c.html#ga4a21b6f9f325022b28bad83c9eb9896c">i2c_mcu.c</a>, <a class="el" href="group___i2_c.html#ga4a21b6f9f325022b28bad83c9eb9896c">i2c_mcu.h</a></li>
-<li>I2C_readBytes()&#160;:&#160;<a class="el" href="group___i2_c.html#ga63ed6aeafd8e26b0cf22f5477746c123">i2c_mcu.h</a>, <a class="el" href="group___i2_c.html#ga63ed6aeafd8e26b0cf22f5477746c123">i2c_mcu.c</a></li>
-<li>I2C_readWord()&#160;:&#160;<a class="el" href="group___i2_c.html#ga3c1b580e0f8d3bffbb1087265be558d2">i2c_mcu.h</a>, <a class="el" href="group___i2_c.html#ga3c1b580e0f8d3bffbb1087265be558d2">i2c_mcu.c</a></li>
-<li>I2C_SelectRegister()&#160;:&#160;<a class="el" href="group___i2_c.html#ga1900aab43da6013cadb944301c929562">i2c_mcu.h</a>, <a class="el" href="group___i2_c.html#ga1900aab43da6013cadb944301c929562">i2c_mcu.c</a></li>
-<li>I2C_writeBit()&#160;:&#160;<a class="el" href="group___i2_c.html#gadddc908cb8cdad77fc824cca1ac2f077">i2c_mcu.h</a>, <a class="el" href="group___i2_c.html#gadddc908cb8cdad77fc824cca1ac2f077">i2c_mcu.c</a></li>
-<li>I2C_writeBits()&#160;:&#160;<a class="el" href="group___i2_c.html#gacb23109c5269fd39be9c926552924eea">i2c_mcu.h</a>, <a class="el" href="group___i2_c.html#gacb23109c5269fd39be9c926552924eea">i2c_mcu.c</a></li>
-<li>I2C_writeByte()&#160;:&#160;<a class="el" href="group___i2_c.html#ga6525bb5162f38b6350d6bc3a3c9c98d7">i2c_mcu.c</a>, <a class="el" href="group___i2_c.html#ga6525bb5162f38b6350d6bc3a3c9c98d7">i2c_mcu.h</a></li>
-<li>I2C_writeBytes()&#160;:&#160;<a class="el" href="group___i2_c.html#ga58d10cf019bafffc7f9b4c2a0b019b53">i2c_mcu.h</a>, <a class="el" href="group___i2_c.html#ga58d10cf019bafffc7f9b4c2a0b019b53">i2c_mcu.c</a></li>
+<li>I2C_readBit()&#160;:&#160;<a class="el" href="group___i2_c.html#ga4d624276af2a431d579bef9e4a28026f">i2c_mcu.h</a>, <a class="el" href="group___i2_c.html#ga4d624276af2a431d579bef9e4a28026f">i2c_mcu.c</a></li>
+<li>I2C_readBits()&#160;:&#160;<a class="el" href="group___i2_c.html#ga9c5bd9ab314bb478a2c70c07d0da9f50">i2c_mcu.h</a>, <a class="el" href="group___i2_c.html#ga9c5bd9ab314bb478a2c70c07d0da9f50">i2c_mcu.c</a></li>
+<li>I2C_readByte()&#160;:&#160;<a class="el" href="group___i2_c.html#ga0d0c191057f18dab8738b3c5f523cb01">i2c_mcu.h</a>, <a class="el" href="group___i2_c.html#ga0d0c191057f18dab8738b3c5f523cb01">i2c_mcu.c</a></li>
+<li>I2C_readBytes()&#160;:&#160;<a class="el" href="group___i2_c.html#ga1a538e675a9e424dcd26b26c9aef3a00">i2c_mcu.h</a>, <a class="el" href="group___i2_c.html#ga1a538e675a9e424dcd26b26c9aef3a00">i2c_mcu.c</a></li>
+<li>I2C_readWord()&#160;:&#160;<a class="el" href="group___i2_c.html#ga94f7abf82855002808a338891ee76d13">i2c_mcu.h</a>, <a class="el" href="group___i2_c.html#ga94f7abf82855002808a338891ee76d13">i2c_mcu.c</a></li>
+<li>I2C_SelectRegister()&#160;:&#160;<a class="el" href="group___i2_c.html#ga3cc36e317364b108dc5c2614ddd6bb1a">i2c_mcu.h</a>, <a class="el" href="group___i2_c.html#ga3cc36e317364b108dc5c2614ddd6bb1a">i2c_mcu.c</a></li>
+<li>I2C_writeBit()&#160;:&#160;<a class="el" href="group___i2_c.html#gab63835618b4d5f656d425d11a3187c11">i2c_mcu.h</a>, <a class="el" href="group___i2_c.html#gab63835618b4d5f656d425d11a3187c11">i2c_mcu.c</a></li>
+<li>I2C_writeBits()&#160;:&#160;<a class="el" href="group___i2_c.html#ga9b2cf38ef7155fdd7cc00407f4ff954a">i2c_mcu.h</a>, <a class="el" href="group___i2_c.html#ga9b2cf38ef7155fdd7cc00407f4ff954a">i2c_mcu.c</a></li>
+<li>I2C_writeByte()&#160;:&#160;<a class="el" href="group___i2_c.html#ga01d5214376094baa433844c6914c1609">i2c_mcu.h</a>, <a class="el" href="group___i2_c.html#ga01d5214376094baa433844c6914c1609">i2c_mcu.c</a></li>
+<li>I2C_writeBytes()&#160;:&#160;<a class="el" href="group___i2_c.html#ga24241da9fe8968b78ecdff0d4700d5f1">i2c_mcu.h</a>, <a class="el" href="group___i2_c.html#ga24241da9fe8968b78ecdff0d4700d5f1">i2c_mcu.c</a></li>
 <li>I2C_writeWord()&#160;:&#160;<a class="el" href="group___i2_c.html#gabfa0fda26a1a14f65a058f8d6dc2b55b">i2c_mcu.h</a>, <a class="el" href="group___i2_c.html#gabfa0fda26a1a14f65a058f8d6dc2b55b">i2c_mcu.c</a></li>
 <li>icon22_data&#160;:&#160;<a class="el" href="icons_8c.html#a7dfa73ddfd1451866ec59711233f1262">icons.c</a></li>
 <li>icon30_data&#160;:&#160;<a class="el" href="icons_8c.html#a525dda4860471c1b77ab2b2774d0d9ea">icons.c</a></li>
@@ -238,14 +242,9 @@ $(document).ready(function(){initNavTree('globals_i.html',''); initResizable(); 
 <li>ILI9341DrawTriangle()&#160;:&#160;<a class="el" href="group___i_l_i9341.html#ga91597ef98cf09f7d8870917f9b5ebea4">ili9341.h</a>, <a class="el" href="group___i_l_i9341.html#ga91597ef98cf09f7d8870917f9b5ebea4">ili9341.c</a></li>
 <li>ILI9341Fill()&#160;:&#160;<a class="el" href="group___i_l_i9341.html#gadbfd33ee5866c7e8283e5d29d2843b5f">ili9341.h</a>, <a class="el" href="group___i_l_i9341.html#gadbfd33ee5866c7e8283e5d29d2843b5f">ili9341.c</a></li>
 <li>ILI9341GetStringSize()&#160;:&#160;<a class="el" href="group___i_l_i9341.html#ga5044d1ea4ba5b9b9244bc13898a514d2">ili9341.h</a>, <a class="el" href="group___i_l_i9341.html#ga5044d1ea4ba5b9b9244bc13898a514d2">ili9341.c</a></li>
-<li>ILI9341Init()&#160;:&#160;<a class="el" href="group___i_l_i9341.html#ga5f72d1febbb1e77c2b50876ba8caf40c">ili9341.c</a>, <a class="el" href="group___i_l_i9341.html#ga5f72d1febbb1e77c2b50876ba8caf40c">ili9341.h</a></li>
+<li>ILI9341Init()&#160;:&#160;<a class="el" href="group___i_l_i9341.html#ga5f72d1febbb1e77c2b50876ba8caf40c">ili9341.h</a>, <a class="el" href="group___i_l_i9341.html#ga5f72d1febbb1e77c2b50876ba8caf40c">ili9341.c</a></li>
 <li>ILI9341Rotate()&#160;:&#160;<a class="el" href="group___i_l_i9341.html#ga7b187b4cb92aa6b28a51fbfd5153aa2b">ili9341.h</a>, <a class="el" href="group___i_l_i9341.html#ga7b187b4cb92aa6b28a51fbfd5153aa2b">ili9341.c</a></li>
 <li>incl_svc&#160;:&#160;<a class="el" href="ble__hid__mcu_8c.html#acc79618f323c3868b5c3ddde94482bb0">ble_hid_mcu.c</a></li>
-<li>info_arch&#160;:&#160;<a class="el" href="projects_2ejercicio__4__5__6_2build_2bootloader_2_c_make_files_23_825_81_2_compiler_id_c_2_c_make_c_compiler_id_8c.html#a59647e99d304ed33b15cb284c27ed391">CMakeCCompilerId.c</a>, <a class="el" href="projects_2ejercicio__4__5__6_2build_2bootloader_2_c_make_files_23_825_81_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#a59647e99d304ed33b15cb284c27ed391">CMakeCXXCompilerId.cpp</a>, <a class="el" href="projects_2ejercicio__4__5__6_2build_2_c_make_files_23_825_81_2_compiler_id_c_2_c_make_c_compiler_id_8c.html#a59647e99d304ed33b15cb284c27ed391">CMakeCCompilerId.c</a>, <a class="el" href="projects_2ejercicio__4__5__6_2build_2_c_make_files_23_825_81_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#a59647e99d304ed33b15cb284c27ed391">CMakeCXXCompilerId.cpp</a>, <a class="el" href="drivers_2build_2_c_make_files_23_825_81_2_compiler_id_c_2_c_make_c_compiler_id_8c.html#a59647e99d304ed33b15cb284c27ed391">CMakeCCompilerId.c</a>, <a class="el" href="drivers_2build_2_c_make_files_23_825_81_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#a59647e99d304ed33b15cb284c27ed391">CMakeCXXCompilerId.cpp</a></li>
-<li>info_compiler&#160;:&#160;<a class="el" href="drivers_2build_2_c_make_files_23_825_81_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#a4b0efeb7a5d59313986b3a0390f050f6">CMakeCXXCompilerId.cpp</a>, <a class="el" href="drivers_2build_2_c_make_files_23_825_81_2_compiler_id_c_2_c_make_c_compiler_id_8c.html#a4b0efeb7a5d59313986b3a0390f050f6">CMakeCCompilerId.c</a>, <a class="el" href="projects_2ejercicio__4__5__6_2build_2bootloader_2_c_make_files_23_825_81_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#a4b0efeb7a5d59313986b3a0390f050f6">CMakeCXXCompilerId.cpp</a>, <a class="el" href="projects_2ejercicio__4__5__6_2build_2bootloader_2_c_make_files_23_825_81_2_compiler_id_c_2_c_make_c_compiler_id_8c.html#a4b0efeb7a5d59313986b3a0390f050f6">CMakeCCompilerId.c</a>, <a class="el" href="projects_2ejercicio__4__5__6_2build_2_c_make_files_23_825_81_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#a4b0efeb7a5d59313986b3a0390f050f6">CMakeCXXCompilerId.cpp</a></li>
-<li>info_language_extensions_default&#160;:&#160;<a class="el" href="projects_2ejercicio__4__5__6_2build_2bootloader_2_c_make_files_23_825_81_2_compiler_id_c_2_c_make_c_compiler_id_8c.html#a0f46a8a39e09d9b803c4766904fd7e99">CMakeCCompilerId.c</a>, <a class="el" href="projects_2ejercicio__4__5__6_2build_2bootloader_2_c_make_files_23_825_81_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#a0f46a8a39e09d9b803c4766904fd7e99">CMakeCXXCompilerId.cpp</a>, <a class="el" href="projects_2ejercicio__4__5__6_2build_2_c_make_files_23_825_81_2_compiler_id_c_2_c_make_c_compiler_id_8c.html#a0f46a8a39e09d9b803c4766904fd7e99">CMakeCCompilerId.c</a>, <a class="el" href="projects_2ejercicio__4__5__6_2build_2_c_make_files_23_825_81_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#a0f46a8a39e09d9b803c4766904fd7e99">CMakeCXXCompilerId.cpp</a>, <a class="el" href="drivers_2build_2_c_make_files_23_825_81_2_compiler_id_c_2_c_make_c_compiler_id_8c.html#a0f46a8a39e09d9b803c4766904fd7e99">CMakeCCompilerId.c</a>, <a class="el" href="drivers_2build_2_c_make_files_23_825_81_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#a0f46a8a39e09d9b803c4766904fd7e99">CMakeCXXCompilerId.cpp</a></li>
-<li>info_language_standard_default&#160;:&#160;<a class="el" href="drivers_2build_2_c_make_files_23_825_81_2_compiler_id_c_2_c_make_c_compiler_id_8c.html#a4607cccf070750927b458473ca82c090">CMakeCCompilerId.c</a>, <a class="el" href="drivers_2build_2_c_make_files_23_825_81_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#a4607cccf070750927b458473ca82c090">CMakeCXXCompilerId.cpp</a>, <a class="el" href="projects_2ejercicio__4__5__6_2build_2_c_make_files_23_825_81_2_compiler_id_c_2_c_make_c_compiler_id_8c.html#a4607cccf070750927b458473ca82c090">CMakeCCompilerId.c</a>, <a class="el" href="projects_2ejercicio__4__5__6_2build_2bootloader_2_c_make_files_23_825_81_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#a4607cccf070750927b458473ca82c090">CMakeCXXCompilerId.cpp</a>, <a class="el" href="projects_2ejercicio__4__5__6_2build_2bootloader_2_c_make_files_23_825_81_2_compiler_id_c_2_c_make_c_compiler_id_8c.html#a4607cccf070750927b458473ca82c090">CMakeCCompilerId.c</a></li>
-<li>info_platform&#160;:&#160;<a class="el" href="projects_2ejercicio__4__5__6_2build_2bootloader_2_c_make_files_23_825_81_2_compiler_id_c_2_c_make_c_compiler_id_8c.html#a2321403dee54ee23f0c2fa849c60f7d4">CMakeCCompilerId.c</a>, <a class="el" href="projects_2ejercicio__4__5__6_2build_2bootloader_2_c_make_files_23_825_81_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#a2321403dee54ee23f0c2fa849c60f7d4">CMakeCXXCompilerId.cpp</a>, <a class="el" href="projects_2ejercicio__4__5__6_2build_2_c_make_files_23_825_81_2_compiler_id_c_2_c_make_c_compiler_id_8c.html#a2321403dee54ee23f0c2fa849c60f7d4">CMakeCCompilerId.c</a>, <a class="el" href="projects_2ejercicio__4__5__6_2build_2_c_make_files_23_825_81_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#a2321403dee54ee23f0c2fa849c60f7d4">CMakeCXXCompilerId.cpp</a>, <a class="el" href="drivers_2build_2_c_make_files_23_825_81_2_compiler_id_c_2_c_make_c_compiler_id_8c.html#a2321403dee54ee23f0c2fa849c60f7d4">CMakeCCompilerId.c</a>, <a class="el" href="drivers_2build_2_c_make_files_23_825_81_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#a2321403dee54ee23f0c2fa849c60f7d4">CMakeCXXCompilerId.cpp</a></li>
 <li>init_config_single&#160;:&#160;<a class="el" href="analog__io__mcu_8c.html#a4fd9860812e660e725ea0c13d458d3f7">analog_io_mcu.c</a></li>
 <li>internal_dout&#160;:&#160;<a class="el" href="hx711_8c.html#a1ff6a94e6be9161d2d7e32a7a592ca0d">hx711.c</a></li>
 <li>internal_pd_sck&#160;:&#160;<a class="el" href="hx711_8c.html#a3ca2bc0ce568857412fd5f0b338d5aa6">hx711.c</a></li>
@@ -254,10 +253,11 @@ $(document).ready(function(){initNavTree('globals_i.html',''); initResizable(); 
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>
 </body>

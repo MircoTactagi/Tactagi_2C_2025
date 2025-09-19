@@ -1,13 +1,16 @@
 var searchData=
 [
-  ['gain_0',['GAIN',['../hx711_8c.html#a97ebc8630db48de37f04b63467584ff0',1,'hx711.c']]],
-  ['gamma_5fset_1',['gamma_set',['../ili9341_8c.html#a56f6a4cad6b1411383f78e0777d5a077',1,'ili9341.c']]],
-  ['gatt_5fif_2',['gatt_if',['../structhidd__le__env__t.html#a56641432afbf2531cd72b0a1eddc6faf',1,'hidd_le_env_t']]],
-  ['gatts_5fcb_3',['gatts_cb',['../structgatts__profile__inst.html#a28b75011466d4c802e22649234b71cad',1,'gatts_profile_inst']]],
-  ['gatts_5fif_4',['gatts_if',['../structesp__hidd__cb__param__t_1_1hidd__init__finish__evt__param.html#a2b8cfa6eddafd0638ba9804268233d5f',1,'esp_hidd_cb_param_t::hidd_init_finish_evt_param::gatts_if()'],['../structgatts__profile__inst.html#a64b71c3b06d5f84b1a010f794f64b8c1',1,'gatts_profile_inst::gatts_if()']]],
-  ['general_5',['general',['../projects_2ejercicio__4__5__6_2build_2_c_make_cache_8txt.html#ad797829e3284fd15f2780269ce9bb6dc',1,'CMakeCache.txt']]],
-  ['gninja_6',['GNinja',['../bootloader-cfgcmd_8txt.html#a941746e888278bacf6d655247ce28743',1,'bootloader-cfgcmd.txt']]],
-  ['gpio_5flist_7',['gpio_list',['../gpio__mcu_8c.html#a8018c4faafd13a4271855441e1a9b2ab',1,'gpio_mcu.c']]],
-  ['gpio_5fmap_8',['gpio_map',['../x__template_8c.html#a1119911c902317f45ee6d5ca50770bc0',1,'x_template.c']]],
-  ['green_9',['green',['../structrgb__led.html#a90d21fa503b626c00cdc8d94863d5877',1,'rgb_led']]]
+  ['handle_0',['handle',['../structhid__report__map__t.html#af242d6e3b6108ea75e1eb236e94c8240',1,'hid_report_map_t::handle'],['../structhid_rpt_map__t.html#af242d6e3b6108ea75e1eb236e94c8240',1,'hidRptMap_t::handle']]],
+  ['height_1',['height',['../structicon__font__t.html#adcf201a8aabf55cb352ec05331242594',1,'icon_font_t::height'],['../structorientation__properties__t.html#a81c9f8d0b8c3b49d770be14dbe9f0d37',1,'orientation_properties_t::height']]],
+  ['hid_5fcount_2',['hid_count',['../ble__hid__mcu_8c.html#a2723374c79e85f2899bba93932ee37c3',1,'ble_hid_mcu.c']]],
+  ['hidd_5fcb_3',['hidd_cb',['../structhidd__le__env__t.html#a1cafcfc2034b035274780fd259018449',1,'hidd_le_env_t']]],
+  ['hidd_5fclcb_4',['hidd_clcb',['../structhidd__le__env__t.html#a8d358a50fa9a4657e7833e6fafd061cb',1,'hidd_le_env_t']]],
+  ['hidd_5ffeature_5',['hidd_feature',['../structhidd__inst__t.html#ad1c33cd0a6de17edb91e3f9ac6408bad',1,'hidd_inst_t']]],
+  ['hidd_5finst_6',['hidd_inst',['../structhidd__le__env__t.html#ab35ec63cfdfb7cb72e2668d069d6b4c8',1,'hidd_le_env_t']]],
+  ['hidd_5fle_5fenv_7',['hidd_le_env',['../ble__hid__mcu_8c.html#a91d82217264ad84483e4f8f0c644d6cf',1,'ble_hid_mcu.c']]],
+  ['hidflags_8',['hidFlags',['../structhid__dev__cfg__t.html#a11563208acc8e846560342314084748d',1,'hid_dev_cfg_t']]],
+  ['hidprotocolmode_9',['hidProtocolMode',['../ble__hid__mcu_8c.html#a18824297d97ae42a7da587d9752002fe',1,'ble_hid_mcu.c']]],
+  ['hidreportmaplen_10',['hidReportMapLen',['../ble__hid__mcu_8c.html#a0b7cc6e74ea0a16819c1665e6118294c',1,'ble_hid_mcu.c']]],
+  ['hids_5fnb_11',['hids_nb',['../structhidd__inst__t.html#a495699a2ab108b1a8a3b946a36b50979',1,'hidd_inst_t']]],
+  ['hour_12',['hour',['../structrtc__t.html#ae5af4ff48939d13d480f87e56a9385d6',1,'rtc_t']]]
 ];

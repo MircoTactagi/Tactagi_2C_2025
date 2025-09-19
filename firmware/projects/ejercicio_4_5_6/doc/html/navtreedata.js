@@ -24,28 +24,23 @@
 */
 var NAVTREE =
 [
-  [ "Proyecto 1", "index.html", [
-    [ "Template", "index.html", [
-      [ "General Description", "index.html#genDesc", null ],
-      [ "Hardware Connection", "index.html#hardConn", null ],
-      [ "Changelog", "index.html#changelog", null ]
-    ] ],
-    [ "Template", "md__home_fiuner__escritorio__repositorio__tactagi_2_c_2025_firmware_projects_ejercicio_4_5_6__r_e_a_d_m_e.html", null ],
-    [ "Módulos", "modules.html", "modules" ],
-    [ "Estructuras de Datos", "annotated.html", [
-      [ "Estructura de datos", "annotated.html", "annotated_dup" ],
-      [ "Índice de estructura de datos", "classes.html", null ],
+  [ "ejercicio_4_5_6", "index.html", [
+    [ "Sistema de Control para Display BCD Multiplexado", "index.html", "index" ],
+    [ "Topics", "topics.html", "topics" ],
+    [ "Estructuras de datos", "annotated.html", [
+      [ "Estructuras de datos", "annotated.html", "annotated_dup" ],
+      [ "Índice de estructuras de datos", "classes.html", null ],
       [ "Campos de datos", "functions.html", [
-        [ "Todo", "functions.html", null ],
+        [ "Todos", "functions.html", null ],
         [ "Variables", "functions_vars.html", null ]
       ] ]
     ] ],
     [ "Archivos", "files.html", [
       [ "Lista de archivos", "files.html", "files_dup" ],
       [ "Globales", "globals.html", [
-        [ "Todo", "globals.html", "globals_dup" ],
+        [ "Todos", "globals.html", "globals_dup" ],
         [ "Funciones", "globals_func.html", "globals_func" ],
-        [ "Variables", "globals_vars.html", "globals_vars" ],
+        [ "Variables", "globals_vars.html", null ],
         [ "typedefs", "globals_type.html", null ],
         [ "Enumeraciones", "globals_enum.html", null ],
         [ "Valores de enumeraciones", "globals_eval.html", "globals_eval" ],
@@ -58,21 +53,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "analog__io__mcu_8c.html",
-"bootloader_2config_2sdkconfig_8h.html#a354f2e1d2b78d1dfe1afdd842e5a3420",
-"bootloader_2config_2sdkconfig_8h.html#aa0035101b0ca7b55cb6edb2a5c4fcbd1",
-"config_2sdkconfig_8h.html#a0dab5931b4dee8521d8d413cc458e85e",
-"config_2sdkconfig_8h.html#a51a968a68931d6456defcbbb8dd78df2",
-"config_2sdkconfig_8h.html#a996c64b87ae8582c54858931e776a515",
-"config_2sdkconfig_8h.html#ae15493d2f5e221edb721129c2de6d2fb",
-"globals_eval_h.html",
-"group___b_l_e.html#ggaed078c594a86d36a49f51710e35c405bafc37c6a510a5d8a513338845b8f3155a",
-"group___i_c_o_n_s.html#gga945c9cb2ded81b38da222e91d09df40ba6cedce76de42d7b4e1fb3b3bdbda5541",
-"group___m_p_u6050.html#ga3b36cc3065aa46e1a018da4af5104a0c",
-"group___m_p_u6050.html#gaa7a9f200df73f3180bd4218044714c1d",
-"group___s_p_i.html#gga7ddb86ccba25a168f889234061e21692ac96709e78c1f5f5e077b68b1c65d141d",
-"projects_2ejercicio__4__5__6_2build_2_c_make_files_23_825_81_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#ad1280362da42492bbc11aa78cbf776ad",
-"structtimer__config__t.html#ab83043b8038c5e630f6a2a05ea007e49"
+"globals_func_c.html",
+"group___b_u_z_z_e_r.html#ga588324691d836c7cdf1dd8cc071eeecc",
+"group___i_l_i9341.html",
+"group___m_p_u6050.html#ga4ba88aa3ff3c6376a2b40f03ec80312f",
+"group___m_p_u6050.html#gab9bd1737877e24c981423c9b63f64d3a",
+"group___w_s2812_b.html",
+"structesp__hidd__cb__param__t_1_1hidd__connect__evt__param.html"
 ];
 
-var SYNCONMSG = 'click en deshabilitar sincronización';
-var SYNCOFFMSG = 'click en habilitar sincronización';
+var SYNCONMSG = 'pulsar para deshabilitar sincronización';
+var SYNCOFFMSG = 'pulsar para habilitar sincronización';
+var LISTOFALLMEMBERS = 'Lista de todos los miembros';

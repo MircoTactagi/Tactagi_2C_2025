@@ -3,7 +3,7 @@ var searchData=
   ['servoinit_0',['ServoInit',['../group___s_e_r_v_o.html#gad3b35d6ee8bdf69b0cceac96862fa8e7',1,'ServoInit(servo_out_t servo, gpio_t gpio):&#160;servo_sg90.c'],['../group___s_e_r_v_o.html#gad3b35d6ee8bdf69b0cceac96862fa8e7',1,'ServoInit(servo_out_t servo, gpio_t gpio):&#160;servo_sg90.c']]],
   ['servomove_1',['ServoMove',['../group___s_e_r_v_o.html#gac63abba15fdb98a070e8da53d87cd80d',1,'ServoMove(servo_out_t servo, int8_t ang):&#160;servo_sg90.c'],['../group___s_e_r_v_o.html#gac63abba15fdb98a070e8da53d87cd80d',1,'ServoMove(servo_out_t servo, int8_t ang):&#160;servo_sg90.c']]],
   ['setcursorposition_2',['SetCursorPosition',['../ili9341_8c.html#a3ced3a9e7189797ae4b2c5cc34cc1886',1,'ili9341.c']]],
-  ['setear_5fgpio_5fdel_5fbcd_3',['setear_gpio_del_bcd',['../x__template_8c.html#a42e2f1cf25b50ab6482b02919643c2d4',1,'x_template.c']]],
+  ['setear_5fgpio_5fdel_5fbcd_3',['setear_gpio_del_bcd',['../ejercicio__4__5__6_8c.html#a42e2f1cf25b50ab6482b02919643c2d4',1,'ejercicio_4_5_6.c']]],
   ['shiftin_4',['shiftIn',['../group___drivers___devices.html#gaacc0fa70a56783b9a18f6ae8a6b37487',1,'shiftIn(void):&#160;hx711.c'],['../group___drivers___devices.html#gaacc0fa70a56783b9a18f6ae8a6b37487',1,'shiftIn(void):&#160;hx711.c']]],
   ['spideinit_5',['SpiDeInit',['../group___s_p_i.html#gac082e2d0f13dd3a3c67e4f30c71fcacf',1,'SpiDeInit(spi_dev_t device):&#160;spi_mcu.c'],['../group___s_p_i.html#gac082e2d0f13dd3a3c67e4f30c71fcacf',1,'SpiDeInit(spi_dev_t device):&#160;spi_mcu.c']]],
   ['spiinit_6',['SpiInit',['../group___s_p_i.html#gab45316fbf89f00655b81427e3e709596',1,'SpiInit(spi_mcu_config_t *spi):&#160;spi_mcu.c'],['../group___s_p_i.html#gab45316fbf89f00655b81427e3e709596',1,'SpiInit(spi_mcu_config_t *spi):&#160;spi_mcu.c']]],

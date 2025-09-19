@@ -1,25 +1,25 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Proyecto 1: I2C</title>
+<title>ejercicio_4_5_6: I2C</title>
+<link rel="icon" href="icon.ico" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-  $(document).ready(function() { init_search(); });
-/* @license-end */
+  $(function() { init_search(); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -31,21 +31,18 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="fiuner.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Proyecto 1<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">ejercicio_4_5_6<span id="projectnumber">&#160;1.0</span>
    </div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
-          <img id="MSearchSelect" src="search/mag_sel.svg"
-               onmouseover="return searchBox.OnSearchSelectShow()"
-               onmouseout="return searchBox.OnSearchSelectHide()"
-               alt=""/>
-          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"
                onfocus="searchBox.OnSearchFieldFocus(true)" 
                onblur="searchBox.OnSearchFieldFocus(false)" 
                onkeyup="searchBox.OnSearchFieldChange(event)"/>
           </span><span class="right">
-            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
           </span>
         </div>
 </td>
@@ -54,11 +51,12 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Generado por Doxygen 1.9.4 -->
+<!-- Generado por Doxygen 1.14.0 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
-/* @license-end */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
 </script>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -72,10 +70,9 @@ var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('group___i2_c.html',''); initResizable(); });
-/* @license-end */
+$(function(){initNavTree('group___i2_c.html','',''); });
 </script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -86,83 +83,67 @@ $(document).ready(function(){initNavTree('group___i2_c.html',''); initResizable(
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#define-members">defines</a> &#124;
-<a href="#func-members">Funciones</a>  </div>
-  <div class="headertitle"><div class="title">I2C<div class="ingroups"><a class="el" href="group___drivers___programable.html">Drivers Programable</a> &raquo; <a class="el" href="group___drivers___microcontroller.html">Drivers microcontroller</a></div></div></div>
+  <div class="headertitle"><div class="title">I2C <div class="ingroups"><a class="el" href="group___drivers___programable.html">Drivers Programable</a> &raquo; <a class="el" href="group___drivers___microcontroller.html">Drivers microcontroller</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 defines</h2></td></tr>
-<tr class="memitem:ga033b5e8a30541fe4ff939a62fdb7a43d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#ga033b5e8a30541fe4ff939a62fdb7a43d">I2C_MASTER_SCL_IO</a>&#160;&#160;&#160;<a class="el" href="group___g_i_o_p.html#ggaf65604147d0244c9b13cfdc865ad5393a4bae0816af6049c68cf772f0e01ea0e5">GPIO_7</a></td></tr>
-<tr class="memdesc:ga033b5e8a30541fe4ff939a62fdb7a43d"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C driver for ESP-EDU board.  <a href="group___i2_c.html#ga033b5e8a30541fe4ff939a62fdb7a43d">Más...</a><br /></td></tr>
-<tr class="separator:ga033b5e8a30541fe4ff939a62fdb7a43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf47631d568bba17edf9d1ea042602bb6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#gaf47631d568bba17edf9d1ea042602bb6">I2C_MASTER_SDA_IO</a>&#160;&#160;&#160;<a class="el" href="group___g_i_o_p.html#ggaf65604147d0244c9b13cfdc865ad5393a1b3ef28b8ae924f5f3fdfbb0ed7e6f7c">GPIO_6</a></td></tr>
-<tr class="separator:gaf47631d568bba17edf9d1ea042602bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaab9e642b6200f95fcbd2ad7466aaa2d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#gaab9e642b6200f95fcbd2ad7466aaa2d3">I2C_MASTER_NUM</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:gaab9e642b6200f95fcbd2ad7466aaa2d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5c22ca4de37a83a59014e48b0a0b043d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#ga5c22ca4de37a83a59014e48b0a0b043d">I2C_MASTER_FREQ_HZ</a>&#160;&#160;&#160;400000</td></tr>
-<tr class="separator:ga5c22ca4de37a83a59014e48b0a0b043d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaa0e84f340ef5ea9db2d7624fdadaa26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#gaaa0e84f340ef5ea9db2d7624fdadaa26">I2C_MASTER_TX_BUF_DISABLE</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:gaaa0e84f340ef5ea9db2d7624fdadaa26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga37a0707200e50e3b3e9ab28b1b8d6777"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#ga37a0707200e50e3b3e9ab28b1b8d6777">I2C_MASTER_RX_BUF_DISABLE</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:ga37a0707200e50e3b3e9ab28b1b8d6777"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7ebc0bc57afc33bd33967be8479690db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#ga7ebc0bc57afc33bd33967be8479690db">I2C_MASTER_TIMEOUT_MS</a>&#160;&#160;&#160;1000</td></tr>
-<tr class="separator:ga7ebc0bc57afc33bd33967be8479690db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga033b5e8a30541fe4ff939a62fdb7a43d" id="r_ga033b5e8a30541fe4ff939a62fdb7a43d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga033b5e8a30541fe4ff939a62fdb7a43d">I2C_MASTER_SCL_IO</a>&#160;&#160;&#160;<a class="el" href="group___g_i_o_p.html#ggaf65604147d0244c9b13cfdc865ad5393a4bae0816af6049c68cf772f0e01ea0e5">GPIO_7</a></td></tr>
+<tr class="memdesc:ga033b5e8a30541fe4ff939a62fdb7a43d"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C driver for ESP-EDU board.  <br /></td></tr>
+<tr class="memitem:gaf47631d568bba17edf9d1ea042602bb6" id="r_gaf47631d568bba17edf9d1ea042602bb6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf47631d568bba17edf9d1ea042602bb6">I2C_MASTER_SDA_IO</a>&#160;&#160;&#160;<a class="el" href="group___g_i_o_p.html#ggaf65604147d0244c9b13cfdc865ad5393a1b3ef28b8ae924f5f3fdfbb0ed7e6f7c">GPIO_6</a></td></tr>
+<tr class="memitem:gaab9e642b6200f95fcbd2ad7466aaa2d3" id="r_gaab9e642b6200f95fcbd2ad7466aaa2d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaab9e642b6200f95fcbd2ad7466aaa2d3">I2C_MASTER_NUM</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:ga5c22ca4de37a83a59014e48b0a0b043d" id="r_ga5c22ca4de37a83a59014e48b0a0b043d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5c22ca4de37a83a59014e48b0a0b043d">I2C_MASTER_FREQ_HZ</a>&#160;&#160;&#160;400000</td></tr>
+<tr class="memitem:gaaa0e84f340ef5ea9db2d7624fdadaa26" id="r_gaaa0e84f340ef5ea9db2d7624fdadaa26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaaa0e84f340ef5ea9db2d7624fdadaa26">I2C_MASTER_TX_BUF_DISABLE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:ga37a0707200e50e3b3e9ab28b1b8d6777" id="r_ga37a0707200e50e3b3e9ab28b1b8d6777"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga37a0707200e50e3b3e9ab28b1b8d6777">I2C_MASTER_RX_BUF_DISABLE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:ga7ebc0bc57afc33bd33967be8479690db" id="r_ga7ebc0bc57afc33bd33967be8479690db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7ebc0bc57afc33bd33967be8479690db">I2C_MASTER_TIMEOUT_MS</a>&#160;&#160;&#160;1000</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Funciones</h2></td></tr>
-<tr class="memitem:gae2cec986d327013569df22dd2945ff58"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#gae2cec986d327013569df22dd2945ff58">I2C_initialize</a> (uint32_t clockRateHz)</td></tr>
-<tr class="memdesc:gae2cec986d327013569df22dd2945ff58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize I2C0.  <a href="group___i2_c.html#gae2cec986d327013569df22dd2945ff58">Más...</a><br /></td></tr>
-<tr class="separator:gae2cec986d327013569df22dd2945ff58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7dba17bc71077c236ff1e4af407448a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#ga7dba17bc71077c236ff1e4af407448a7">I2C_enable</a> (bool isEnabled)</td></tr>
-<tr class="memdesc:ga7dba17bc71077c236ff1e4af407448a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable I2C.  <a href="group___i2_c.html#ga7dba17bc71077c236ff1e4af407448a7">Más...</a><br /></td></tr>
-<tr class="separator:ga7dba17bc71077c236ff1e4af407448a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9ff51515a73e2748e863f88b94453806"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#ga9ff51515a73e2748e863f88b94453806">I2C_readBit</a> (uint8_t <a class="el" href="mpu6050_8c.html#aef9d7f9ccfe8fcda63e76f9541f59700">devAddr</a>, uint8_t regAddr, uint8_t bitNum, uint8_t *data, uint16_t timeout)</td></tr>
-<tr class="memdesc:ga9ff51515a73e2748e863f88b94453806"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a single bit from an 8-bit device register.  <a href="group___i2_c.html#ga9ff51515a73e2748e863f88b94453806">Más...</a><br /></td></tr>
-<tr class="separator:ga9ff51515a73e2748e863f88b94453806"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga45576a616bac63831ccbb0d803e02937"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#ga45576a616bac63831ccbb0d803e02937">I2C_readBits</a> (uint8_t <a class="el" href="mpu6050_8c.html#aef9d7f9ccfe8fcda63e76f9541f59700">devAddr</a>, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint8_t *data, uint16_t timeout)</td></tr>
-<tr class="memdesc:ga45576a616bac63831ccbb0d803e02937"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read multiple bits from an 8-bit device register.  <a href="group___i2_c.html#ga45576a616bac63831ccbb0d803e02937">Más...</a><br /></td></tr>
-<tr class="separator:ga45576a616bac63831ccbb0d803e02937"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4a21b6f9f325022b28bad83c9eb9896c"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#ga4a21b6f9f325022b28bad83c9eb9896c">I2C_readByte</a> (uint8_t <a class="el" href="mpu6050_8c.html#aef9d7f9ccfe8fcda63e76f9541f59700">devAddr</a>, uint8_t regAddr, uint8_t *data, uint16_t timeout)</td></tr>
-<tr class="memdesc:ga4a21b6f9f325022b28bad83c9eb9896c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read single byte from an 8-bit device register.  <a href="group___i2_c.html#ga4a21b6f9f325022b28bad83c9eb9896c">Más...</a><br /></td></tr>
-<tr class="separator:ga4a21b6f9f325022b28bad83c9eb9896c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3c1b580e0f8d3bffbb1087265be558d2"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#ga3c1b580e0f8d3bffbb1087265be558d2">I2C_readWord</a> (uint8_t <a class="el" href="mpu6050_8c.html#aef9d7f9ccfe8fcda63e76f9541f59700">devAddr</a>, uint8_t regAddr, uint16_t *data, uint16_t timeout)</td></tr>
-<tr class="memdesc:ga3c1b580e0f8d3bffbb1087265be558d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read word from an 16-bit device register.  <a href="group___i2_c.html#ga3c1b580e0f8d3bffbb1087265be558d2">Más...</a><br /></td></tr>
-<tr class="separator:ga3c1b580e0f8d3bffbb1087265be558d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga63ed6aeafd8e26b0cf22f5477746c123"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#ga63ed6aeafd8e26b0cf22f5477746c123">I2C_readBytes</a> (uint8_t <a class="el" href="mpu6050_8c.html#aef9d7f9ccfe8fcda63e76f9541f59700">devAddr</a>, uint8_t regAddr, uint8_t length, uint8_t *data, uint16_t timeout)</td></tr>
-<tr class="memdesc:ga63ed6aeafd8e26b0cf22f5477746c123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read multiple bytes from an 8-bit device register.  <a href="group___i2_c.html#ga63ed6aeafd8e26b0cf22f5477746c123">Más...</a><br /></td></tr>
-<tr class="separator:ga63ed6aeafd8e26b0cf22f5477746c123"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadddc908cb8cdad77fc824cca1ac2f077"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#gadddc908cb8cdad77fc824cca1ac2f077">I2C_writeBit</a> (uint8_t <a class="el" href="mpu6050_8c.html#aef9d7f9ccfe8fcda63e76f9541f59700">devAddr</a>, uint8_t regAddr, uint8_t bitNum, uint8_t data)</td></tr>
-<tr class="memdesc:gadddc908cb8cdad77fc824cca1ac2f077"><td class="mdescLeft">&#160;</td><td class="mdescRight">write a single bit in an 8-bit device register.  <a href="group___i2_c.html#gadddc908cb8cdad77fc824cca1ac2f077">Más...</a><br /></td></tr>
-<tr class="separator:gadddc908cb8cdad77fc824cca1ac2f077"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacb23109c5269fd39be9c926552924eea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#gacb23109c5269fd39be9c926552924eea">I2C_writeBits</a> (uint8_t <a class="el" href="mpu6050_8c.html#aef9d7f9ccfe8fcda63e76f9541f59700">devAddr</a>, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint8_t data)</td></tr>
-<tr class="memdesc:gacb23109c5269fd39be9c926552924eea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write multiple bits in an 8-bit device register.  <a href="group___i2_c.html#gacb23109c5269fd39be9c926552924eea">Más...</a><br /></td></tr>
-<tr class="separator:gacb23109c5269fd39be9c926552924eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6525bb5162f38b6350d6bc3a3c9c98d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#ga6525bb5162f38b6350d6bc3a3c9c98d7">I2C_writeByte</a> (uint8_t <a class="el" href="mpu6050_8c.html#aef9d7f9ccfe8fcda63e76f9541f59700">devAddr</a>, uint8_t regAddr, uint8_t data)</td></tr>
-<tr class="memdesc:ga6525bb5162f38b6350d6bc3a3c9c98d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write single byte to an 8-bit device register.  <a href="group___i2_c.html#ga6525bb5162f38b6350d6bc3a3c9c98d7">Más...</a><br /></td></tr>
-<tr class="separator:ga6525bb5162f38b6350d6bc3a3c9c98d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabfa0fda26a1a14f65a058f8d6dc2b55b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#gabfa0fda26a1a14f65a058f8d6dc2b55b">I2C_writeWord</a> (uint8_t <a class="el" href="mpu6050_8c.html#aef9d7f9ccfe8fcda63e76f9541f59700">devAddr</a>, uint8_t regAddr, uint16_t data)</td></tr>
-<tr class="memdesc:gabfa0fda26a1a14f65a058f8d6dc2b55b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write word from an 16-bit device register.  <a href="group___i2_c.html#gabfa0fda26a1a14f65a058f8d6dc2b55b">Más...</a><br /></td></tr>
-<tr class="separator:gabfa0fda26a1a14f65a058f8d6dc2b55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga58d10cf019bafffc7f9b4c2a0b019b53"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#ga58d10cf019bafffc7f9b4c2a0b019b53">I2C_writeBytes</a> (uint8_t <a class="el" href="mpu6050_8c.html#aef9d7f9ccfe8fcda63e76f9541f59700">devAddr</a>, uint8_t regAddr, uint8_t length, uint8_t *data)</td></tr>
-<tr class="memdesc:ga58d10cf019bafffc7f9b4c2a0b019b53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write multiple bytes to device.  <a href="group___i2_c.html#ga58d10cf019bafffc7f9b4c2a0b019b53">Más...</a><br /></td></tr>
-<tr class="separator:ga58d10cf019bafffc7f9b4c2a0b019b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1900aab43da6013cadb944301c929562"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#ga1900aab43da6013cadb944301c929562">I2C_SelectRegister</a> (uint8_t <a class="el" href="mpu6050_8c.html#aef9d7f9ccfe8fcda63e76f9541f59700">devAddr</a>, uint8_t reg)</td></tr>
-<tr class="memdesc:ga1900aab43da6013cadb944301c929562"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select a register.  <a href="group___i2_c.html#ga1900aab43da6013cadb944301c929562">Más...</a><br /></td></tr>
-<tr class="separator:ga1900aab43da6013cadb944301c929562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga560ffec35071f9f2427fb89cb1518063" id="r_ga560ffec35071f9f2427fb89cb1518063"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga560ffec35071f9f2427fb89cb1518063">I2C_initialize</a> (uint32_t clockRateHz)</td></tr>
+<tr class="memdesc:ga560ffec35071f9f2427fb89cb1518063"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize I2C0.  <br /></td></tr>
+<tr class="memitem:gafbff174e11a59e45e12cbfa5044d8233" id="r_gafbff174e11a59e45e12cbfa5044d8233"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gafbff174e11a59e45e12cbfa5044d8233">I2C_enable</a> (bool isEnabled)</td></tr>
+<tr class="memdesc:gafbff174e11a59e45e12cbfa5044d8233"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable I2C.  <br /></td></tr>
+<tr class="memitem:ga4d624276af2a431d579bef9e4a28026f" id="r_ga4d624276af2a431d579bef9e4a28026f"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4d624276af2a431d579bef9e4a28026f">I2C_readBit</a> (uint8_t <a class="el" href="mpu6050_8c.html#aef9d7f9ccfe8fcda63e76f9541f59700">devAddr</a>, uint8_t regAddr, uint8_t bitNum, uint8_t *data, uint16_t timeout)</td></tr>
+<tr class="memdesc:ga4d624276af2a431d579bef9e4a28026f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a single bit from an 8-bit device register.  <br /></td></tr>
+<tr class="memitem:ga9c5bd9ab314bb478a2c70c07d0da9f50" id="r_ga9c5bd9ab314bb478a2c70c07d0da9f50"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9c5bd9ab314bb478a2c70c07d0da9f50">I2C_readBits</a> (uint8_t <a class="el" href="mpu6050_8c.html#aef9d7f9ccfe8fcda63e76f9541f59700">devAddr</a>, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint8_t *data, uint16_t timeout)</td></tr>
+<tr class="memdesc:ga9c5bd9ab314bb478a2c70c07d0da9f50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read multiple bits from an 8-bit device register.  <br /></td></tr>
+<tr class="memitem:ga0d0c191057f18dab8738b3c5f523cb01" id="r_ga0d0c191057f18dab8738b3c5f523cb01"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0d0c191057f18dab8738b3c5f523cb01">I2C_readByte</a> (uint8_t <a class="el" href="mpu6050_8c.html#aef9d7f9ccfe8fcda63e76f9541f59700">devAddr</a>, uint8_t regAddr, uint8_t *data, uint16_t timeout)</td></tr>
+<tr class="memdesc:ga0d0c191057f18dab8738b3c5f523cb01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read single byte from an 8-bit device register.  <br /></td></tr>
+<tr class="memitem:ga94f7abf82855002808a338891ee76d13" id="r_ga94f7abf82855002808a338891ee76d13"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga94f7abf82855002808a338891ee76d13">I2C_readWord</a> (uint8_t <a class="el" href="mpu6050_8c.html#aef9d7f9ccfe8fcda63e76f9541f59700">devAddr</a>, uint8_t regAddr, uint16_t *data, uint16_t timeout)</td></tr>
+<tr class="memdesc:ga94f7abf82855002808a338891ee76d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read word from an 16-bit device register.  <br /></td></tr>
+<tr class="memitem:ga1a538e675a9e424dcd26b26c9aef3a00" id="r_ga1a538e675a9e424dcd26b26c9aef3a00"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1a538e675a9e424dcd26b26c9aef3a00">I2C_readBytes</a> (uint8_t <a class="el" href="mpu6050_8c.html#aef9d7f9ccfe8fcda63e76f9541f59700">devAddr</a>, uint8_t regAddr, uint8_t length, uint8_t *data, uint16_t timeout)</td></tr>
+<tr class="memdesc:ga1a538e675a9e424dcd26b26c9aef3a00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read multiple bytes from an 8-bit device register.  <br /></td></tr>
+<tr class="memitem:gab63835618b4d5f656d425d11a3187c11" id="r_gab63835618b4d5f656d425d11a3187c11"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab63835618b4d5f656d425d11a3187c11">I2C_writeBit</a> (uint8_t <a class="el" href="mpu6050_8c.html#aef9d7f9ccfe8fcda63e76f9541f59700">devAddr</a>, uint8_t regAddr, uint8_t bitNum, uint8_t data)</td></tr>
+<tr class="memdesc:gab63835618b4d5f656d425d11a3187c11"><td class="mdescLeft">&#160;</td><td class="mdescRight">write a single bit in an 8-bit device register.  <br /></td></tr>
+<tr class="memitem:ga9b2cf38ef7155fdd7cc00407f4ff954a" id="r_ga9b2cf38ef7155fdd7cc00407f4ff954a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9b2cf38ef7155fdd7cc00407f4ff954a">I2C_writeBits</a> (uint8_t <a class="el" href="mpu6050_8c.html#aef9d7f9ccfe8fcda63e76f9541f59700">devAddr</a>, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint8_t data)</td></tr>
+<tr class="memdesc:ga9b2cf38ef7155fdd7cc00407f4ff954a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write multiple bits in an 8-bit device register.  <br /></td></tr>
+<tr class="memitem:ga01d5214376094baa433844c6914c1609" id="r_ga01d5214376094baa433844c6914c1609"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga01d5214376094baa433844c6914c1609">I2C_writeByte</a> (uint8_t <a class="el" href="mpu6050_8c.html#aef9d7f9ccfe8fcda63e76f9541f59700">devAddr</a>, uint8_t regAddr, uint8_t data)</td></tr>
+<tr class="memdesc:ga01d5214376094baa433844c6914c1609"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write single byte to an 8-bit device register.  <br /></td></tr>
+<tr class="memitem:gabfa0fda26a1a14f65a058f8d6dc2b55b" id="r_gabfa0fda26a1a14f65a058f8d6dc2b55b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabfa0fda26a1a14f65a058f8d6dc2b55b">I2C_writeWord</a> (uint8_t <a class="el" href="mpu6050_8c.html#aef9d7f9ccfe8fcda63e76f9541f59700">devAddr</a>, uint8_t regAddr, uint16_t data)</td></tr>
+<tr class="memdesc:gabfa0fda26a1a14f65a058f8d6dc2b55b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write word from an 16-bit device register.  <br /></td></tr>
+<tr class="memitem:ga24241da9fe8968b78ecdff0d4700d5f1" id="r_ga24241da9fe8968b78ecdff0d4700d5f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga24241da9fe8968b78ecdff0d4700d5f1">I2C_writeBytes</a> (uint8_t <a class="el" href="mpu6050_8c.html#aef9d7f9ccfe8fcda63e76f9541f59700">devAddr</a>, uint8_t regAddr, uint8_t length, uint8_t *data)</td></tr>
+<tr class="memdesc:ga24241da9fe8968b78ecdff0d4700d5f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write multiple bytes to device.  <br /></td></tr>
+<tr class="memitem:ga3cc36e317364b108dc5c2614ddd6bb1a" id="r_ga3cc36e317364b108dc5c2614ddd6bb1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3cc36e317364b108dc5c2614ddd6bb1a">I2C_SelectRegister</a> (uint8_t <a class="el" href="mpu6050_8c.html#aef9d7f9ccfe8fcda63e76f9541f59700">devAddr</a>, uint8_t reg)</td></tr>
+<tr class="memdesc:ga3cc36e317364b108dc5c2614ddd6bb1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select a register.  <br /></td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
-<h2 class="groupheader">Documentación de los 'defines'</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descripción detallada</h2>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Documentación de «define»</h2>
 <a id="ga5c22ca4de37a83a59014e48b0a0b043d" name="ga5c22ca4de37a83a59014e48b0a0b043d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5c22ca4de37a83a59014e48b0a0b043d">&#9670;&nbsp;</a></span>I2C_MASTER_FREQ_HZ</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5c22ca4de37a83a59014e48b0a0b043d">&#9670;&#160;</a></span>I2C_MASTER_FREQ_HZ</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -172,14 +153,14 @@ Funciones</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >I2C master clock frequency </p>
+<p>I2C master clock frequency </p>
 
 <p class="definition">Definición en la línea <a class="el" href="i2c__mcu_8h_source.html#l00039">39</a> del archivo <a class="el" href="i2c__mcu_8h_source.html">i2c_mcu.h</a>.</p>
 
 </div>
 </div>
 <a id="gaab9e642b6200f95fcbd2ad7466aaa2d3" name="gaab9e642b6200f95fcbd2ad7466aaa2d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaab9e642b6200f95fcbd2ad7466aaa2d3">&#9670;&nbsp;</a></span>I2C_MASTER_NUM</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaab9e642b6200f95fcbd2ad7466aaa2d3">&#9670;&#160;</a></span>I2C_MASTER_NUM</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -189,14 +170,16 @@ Funciones</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >I2C master i2c port number, the number of i2c peripheral interfaces available will depend on the chip </p>
+<p>I2C master i2c port number, the number of i2c peripheral interfaces available will depend on the chip </p>
 
 <p class="definition">Definición en la línea <a class="el" href="i2c__mcu_8h_source.html#l00038">38</a> del archivo <a class="el" href="i2c__mcu_8h_source.html">i2c_mcu.h</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="i2c__mcu_8c_source.html#l00034">I2C_initialize()</a>.</p>
 
 </div>
 </div>
 <a id="ga37a0707200e50e3b3e9ab28b1b8d6777" name="ga37a0707200e50e3b3e9ab28b1b8d6777"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga37a0707200e50e3b3e9ab28b1b8d6777">&#9670;&nbsp;</a></span>I2C_MASTER_RX_BUF_DISABLE</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga37a0707200e50e3b3e9ab28b1b8d6777">&#9670;&#160;</a></span>I2C_MASTER_RX_BUF_DISABLE</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,14 +189,16 @@ Funciones</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >I2C master doesn't need buffer </p>
+<p>I2C master doesn't need buffer </p>
 
 <p class="definition">Definición en la línea <a class="el" href="i2c__mcu_8h_source.html#l00041">41</a> del archivo <a class="el" href="i2c__mcu_8h_source.html">i2c_mcu.h</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="i2c__mcu_8c_source.html#l00034">I2C_initialize()</a>.</p>
 
 </div>
 </div>
 <a id="ga033b5e8a30541fe4ff939a62fdb7a43d" name="ga033b5e8a30541fe4ff939a62fdb7a43d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga033b5e8a30541fe4ff939a62fdb7a43d">&#9670;&nbsp;</a></span>I2C_MASTER_SCL_IO</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga033b5e8a30541fe4ff939a62fdb7a43d">&#9670;&#160;</a></span>I2C_MASTER_SCL_IO</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -229,22 +214,24 @@ Funciones</h2></td></tr>
 <dd>
 ESP-EDU have 4 I2C connector in the board (J4, J5, J6 and J8), but all of them are routed to the same I2C port.</dd></dl>
 <dl class="section author"><dt>Autor</dt><dd>Juan Ignacio Cerrudo</dd></dl>
-<h1><a class="anchor" id="changelog"></a>
-Changelog</h1>
+<h1 class="doxsection"><a class="anchor" id="changelog"></a>
+Registro de Cambios</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadCenter">Date   </th><th class="markdownTableHeadLeft">Description    </th></tr>
+<th class="markdownTableHeadCenter">Date  </th><th class="markdownTableHeadLeft">Description  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">30/01/2024   </td><td class="markdownTableBodyLeft">Document creation   </td></tr>
+<td class="markdownTableBodyCenter">30/01/2024  </td><td class="markdownTableBodyLeft">Document creation  </td></tr>
 </table>
 <p>GPIO number used for I2C master clock </p>
 
 <p class="definition">Definición en la línea <a class="el" href="i2c__mcu_8h_source.html#l00036">36</a> del archivo <a class="el" href="i2c__mcu_8h_source.html">i2c_mcu.h</a>.</p>
 
+<p class="reference">Referenciado por <a class="el" href="i2c__mcu_8c_source.html#l00034">I2C_initialize()</a>.</p>
+
 </div>
 </div>
 <a id="gaf47631d568bba17edf9d1ea042602bb6" name="gaf47631d568bba17edf9d1ea042602bb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf47631d568bba17edf9d1ea042602bb6">&#9670;&nbsp;</a></span>I2C_MASTER_SDA_IO</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf47631d568bba17edf9d1ea042602bb6">&#9670;&#160;</a></span>I2C_MASTER_SDA_IO</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -254,15 +241,16 @@ Changelog</h1>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >GPIO number used for I2C master data <br  />
- </p>
+<p>GPIO number used for I2C master data </p>
 
 <p class="definition">Definición en la línea <a class="el" href="i2c__mcu_8h_source.html#l00037">37</a> del archivo <a class="el" href="i2c__mcu_8h_source.html">i2c_mcu.h</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="i2c__mcu_8c_source.html#l00034">I2C_initialize()</a>.</p>
 
 </div>
 </div>
 <a id="ga7ebc0bc57afc33bd33967be8479690db" name="ga7ebc0bc57afc33bd33967be8479690db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7ebc0bc57afc33bd33967be8479690db">&#9670;&nbsp;</a></span>I2C_MASTER_TIMEOUT_MS</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7ebc0bc57afc33bd33967be8479690db">&#9670;&#160;</a></span>I2C_MASTER_TIMEOUT_MS</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -275,10 +263,12 @@ Changelog</h1>
 
 <p class="definition">Definición en la línea <a class="el" href="i2c__mcu_8h_source.html#l00042">42</a> del archivo <a class="el" href="i2c__mcu_8h_source.html">i2c_mcu.h</a>.</p>
 
+<p class="reference">Referenciado por <a class="el" href="mpu6050_8c_source.html#l01822">MPU6050_getAcceleration()</a>, <a class="el" href="mpu6050_8c_source.html#l01833">MPU6050_getAccelerationX()</a>, <a class="el" href="mpu6050_8c_source.html#l01842">MPU6050_getAccelerationY()</a>, <a class="el" href="mpu6050_8c_source.html#l01851">MPU6050_getAccelerationZ()</a>, <a class="el" href="mpu6050_8c_source.html#l02226">MPU6050_getAccelerometerPowerOnDelay()</a>, <a class="el" href="mpu6050_8c_source.html#l00701">MPU6050_getAccelFIFOEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l00305">MPU6050_getAccelXSelfTest()</a>, <a class="el" href="mpu6050_8c_source.html#l00247">MPU6050_getAccelXSelfTestFactoryTrim()</a>, <a class="el" href="mpu6050_8c_source.html#l00320">MPU6050_getAccelYSelfTest()</a>, <a class="el" href="mpu6050_8c_source.html#l00257">MPU6050_getAccelYSelfTestFactoryTrim()</a>, <a class="el" href="mpu6050_8c_source.html#l00335">MPU6050_getAccelZSelfTest()</a>, <a class="el" href="mpu6050_8c_source.html#l00267">MPU6050_getAccelZSelfTestFactoryTrim()</a>, <a class="el" href="mpu6050_8c_source.html#l00071">MPU6050_getAuxVDDIOLevel()</a>, <a class="el" href="mpu6050_8c_source.html#l01504">MPU6050_getClockOutputEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l02493">MPU6050_getClockSource()</a>, <a class="el" href="mpu6050_8c_source.html#l02752">MPU6050_getDeviceID()</a>, <a class="el" href="mpu6050_8c_source.html#l00409">MPU6050_getDHPFMode()</a>, <a class="el" href="mpu6050_8c_source.html#l00190">MPU6050_getDLPFMode()</a>, <a class="el" href="mpu6050_8c_source.html#l00149">MPU6050_getExternalFrameSync()</a>, <a class="el" href="mpu6050_8c_source.html#l02011">MPU6050_getExternalSensorByte()</a>, <a class="el" href="mpu6050_8c_source.html#l02029">MPU6050_getExternalSensorDWord()</a>, <a class="el" href="mpu6050_8c_source.html#l02020">MPU6050_getExternalSensorWord()</a>, <a class="el" href="mpu6050_8c_source.html#l02133">MPU6050_getExternalShadowDelayEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l02724">MPU6050_getFIFOByte()</a>, <a class="el" href="mpu6050_8c_source.html#l02728">MPU6050_getFIFOBytes()</a>, <a class="el" href="mpu6050_8c_source.html#l02692">MPU6050_getFIFOCount()</a>, <a class="el" href="mpu6050_8c_source.html#l02325">MPU6050_getFIFOEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l02265">MPU6050_getFreefallDetectionCounterDecrement()</a>, <a class="el" href="mpu6050_8c_source.html#l00472">MPU6050_getFreefallDetectionDuration()</a>, <a class="el" href="mpu6050_8c_source.html#l00440">MPU6050_getFreefallDetectionThreshold()</a>, <a class="el" href="mpu6050_8c_source.html#l01453">MPU6050_getFSyncInterruptEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l01434">MPU6050_getFSyncInterruptLevel()</a>, <a class="el" href="mpu6050_8c_source.html#l00363">MPU6050_getFullScaleAccelRange()</a>, <a class="el" href="mpu6050_8c_source.html#l00225">MPU6050_getFullScaleGyroRange()</a>, <a class="el" href="mpu6050_8c_source.html#l00276">MPU6050_getGyroXSelfTestFactoryTrim()</a>, <a class="el" href="mpu6050_8c_source.html#l00285">MPU6050_getGyroYSelfTestFactoryTrim()</a>, <a class="el" href="mpu6050_8c_source.html#l00294">MPU6050_getGyroZSelfTestFactoryTrim()</a>, <a class="el" href="mpu6050_8c_source.html#l01477">MPU6050_getI2CBypassEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l02349">MPU6050_getI2CMasterModeEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l01648">MPU6050_getIntDataReadyEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l01738">MPU6050_getIntDataReadyStatus()</a>, <a class="el" href="mpu6050_8c_source.html#l01530">MPU6050_getIntEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l01377">MPU6050_getInterruptDrive()</a>, <a class="el" href="mpu6050_8c_source.html#l01396">MPU6050_getInterruptLatch()</a>, <a class="el" href="mpu6050_8c_source.html#l01415">MPU6050_getInterruptLatchClear()</a>, <a class="el" href="mpu6050_8c_source.html#l01358">MPU6050_getInterruptMode()</a>, <a class="el" href="mpu6050_8c_source.html#l01608">MPU6050_getIntFIFOBufferOverflowEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l01715">MPU6050_getIntFIFOBufferOverflowStatus()</a>, <a class="el" href="mpu6050_8c_source.html#l01551">MPU6050_getIntFreefallEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l01682">MPU6050_getIntFreefallStatus()</a>, <a class="el" href="mpu6050_8c_source.html#l01628">MPU6050_getIntI2CMasterEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l01727">MPU6050_getIntI2CMasterStatus()</a>, <a class="el" href="mpu6050_8c_source.html#l01570">MPU6050_getIntMotionEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l01693">MPU6050_getIntMotionStatus()</a>, <a class="el" href="mpu6050_8c_source.html#l01671">MPU6050_getIntStatus()</a>, <a class="el" href="mpu6050_8c_source.html#l01589">MPU6050_getIntZeroMotionEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l01704">MPU6050_getIntZeroMotionStatus()</a>, <a class="el" href="mpu6050_8c_source.html#l01290">MPU6050_getLostArbitration()</a>, <a class="el" href="mpu6050_8c_source.html#l00889">MPU6050_getMasterClockSpeed()</a>, <a class="el" href="mpu6050_8c_source.html#l01777">MPU6050_getMotion6()</a>, <a class="el" href="mpu6050_8c_source.html#l02301">MPU6050_getMotionDetectionCounterDecrement()</a>, <a class="el" href="mpu6050_8c_source.html#l00536">MPU6050_getMotionDetectionDuration()</a>, <a class="el" href="mpu6050_8c_source.html#l00506">MPU6050_getMotionDetectionThreshold()</a>, <a class="el" href="mpu6050_8c_source.html#l02040">MPU6050_getMotionStatus()</a>, <a class="el" href="mpu6050_8c_source.html#l00785">MPU6050_getMultiMasterEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l01267">MPU6050_getPassthroughStatus()</a>, <a class="el" href="mpu6050_8c_source.html#l00107">MPU6050_getRate()</a>, <a class="el" href="mpu6050_8c_source.html#l01901">MPU6050_getRotation()</a>, <a class="el" href="mpu6050_8c_source.html#l01912">MPU6050_getRotationX()</a>, <a class="el" href="mpu6050_8c_source.html#l01921">MPU6050_getRotationY()</a>, <a class="el" href="mpu6050_8c_source.html#l01930">MPU6050_getRotationZ()</a>, <a class="el" href="mpu6050_8c_source.html#l01251">MPU6050_getSlate4InputByte()</a>, <a class="el" href="mpu6050_8c_source.html#l00755">MPU6050_getSlave0FIFOEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l01345">MPU6050_getSlave0Nack()</a>, <a class="el" href="mpu6050_8c_source.html#l00737">MPU6050_getSlave1FIFOEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l01334">MPU6050_getSlave1Nack()</a>, <a class="el" href="mpu6050_8c_source.html#l00719">MPU6050_getSlave2FIFOEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l01323">MPU6050_getSlave2Nack()</a>, <a class="el" href="mpu6050_8c_source.html#l00826">MPU6050_getSlave3FIFOEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l01312">MPU6050_getSlave3Nack()</a>, <a class="el" href="mpu6050_8c_source.html#l01118">MPU6050_getSlave4Address()</a>, <a class="el" href="mpu6050_8c_source.html#l01164">MPU6050_getSlave4Enabled()</a>, <a class="el" href="mpu6050_8c_source.html#l01185">MPU6050_getSlave4InterruptEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l01279">MPU6050_getSlave4IsDone()</a>, <a class="el" href="mpu6050_8c_source.html#l01233">MPU6050_getSlave4MasterDelay()</a>, <a class="el" href="mpu6050_8c_source.html#l01301">MPU6050_getSlave4Nack()</a>, <a class="el" href="mpu6050_8c_source.html#l01137">MPU6050_getSlave4Register()</a>, <a class="el" href="mpu6050_8c_source.html#l01206">MPU6050_getSlave4WriteMode()</a>, <a class="el" href="mpu6050_8c_source.html#l00944">MPU6050_getSlaveAddress()</a>, <a class="el" href="mpu6050_8c_source.html#l01091">MPU6050_getSlaveDataLength()</a>, <a class="el" href="mpu6050_8c_source.html#l02164">MPU6050_getSlaveDelayEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l00992">MPU6050_getSlaveEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l00848">MPU6050_getSlaveReadWriteTransitionEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l00970">MPU6050_getSlaveRegister()</a>, <a class="el" href="mpu6050_8c_source.html#l01018">MPU6050_getSlaveWordByteSwap()</a>, <a class="el" href="mpu6050_8c_source.html#l01069">MPU6050_getSlaveWordGroupOffset()</a>, <a class="el" href="mpu6050_8c_source.html#l01043">MPU6050_getSlaveWriteMode()</a>, <a class="el" href="mpu6050_8c_source.html#l02424">MPU6050_getSleepEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l02574">MPU6050_getStandbyXAccelEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l02631">MPU6050_getStandbyXGyroEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l02593">MPU6050_getStandbyYAccelEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l02650">MPU6050_getStandbyYGyroEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l02612">MPU6050_getStandbyZAccelEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l02669">MPU6050_getStandbyZGyroEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l01862">MPU6050_getTemperature()</a>, <a class="el" href="mpu6050_8c_source.html#l00628">MPU6050_getTempFIFOEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l02469">MPU6050_getTempSensorEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l00808">MPU6050_getWaitForExternalSensorEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l02445">MPU6050_getWakeCycleEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l02556">MPU6050_getWakeFrequency()</a>, <a class="el" href="mpu6050_8c_source.html#l00646">MPU6050_getXGyroFIFOEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l02049">MPU6050_getXNegMotionDetected()</a>, <a class="el" href="mpu6050_8c_source.html#l02058">MPU6050_getXPosMotionDetected()</a>, <a class="el" href="mpu6050_8c_source.html#l00664">MPU6050_getYGyroFIFOEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l02067">MPU6050_getYNegMotionDetected()</a>, <a class="el" href="mpu6050_8c_source.html#l02076">MPU6050_getYPosMotionDetected()</a>, <a class="el" href="mpu6050_8c_source.html#l02103">MPU6050_getZeroMotionDetected()</a>, <a class="el" href="mpu6050_8c_source.html#l00607">MPU6050_getZeroMotionDetectionDuration()</a>, <a class="el" href="mpu6050_8c_source.html#l00576">MPU6050_getZeroMotionDetectionThreshold()</a>, <a class="el" href="mpu6050_8c_source.html#l00682">MPU6050_getZGyroFIFOEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l02085">MPU6050_getZNegMotionDetected()</a> y <a class="el" href="mpu6050_8c_source.html#l02094">MPU6050_getZPosMotionDetected()</a>.</p>
+
 </div>
 </div>
 <a id="gaaa0e84f340ef5ea9db2d7624fdadaa26" name="gaaa0e84f340ef5ea9db2d7624fdadaa26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaa0e84f340ef5ea9db2d7624fdadaa26">&#9670;&nbsp;</a></span>I2C_MASTER_TX_BUF_DISABLE</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaa0e84f340ef5ea9db2d7624fdadaa26">&#9670;&#160;</a></span>I2C_MASTER_TX_BUF_DISABLE</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -288,24 +278,25 @@ Changelog</h1>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >I2C master doesn't need buffer </p>
+<p>I2C master doesn't need buffer </p>
 
 <p class="definition">Definición en la línea <a class="el" href="i2c__mcu_8h_source.html#l00040">40</a> del archivo <a class="el" href="i2c__mcu_8h_source.html">i2c_mcu.h</a>.</p>
 
+<p class="reference">Referenciado por <a class="el" href="i2c__mcu_8c_source.html#l00034">I2C_initialize()</a>.</p>
+
 </div>
 </div>
-<h2 class="groupheader">Documentación de las funciones</h2>
-<a id="ga7dba17bc71077c236ff1e4af407448a7" name="ga7dba17bc71077c236ff1e4af407448a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7dba17bc71077c236ff1e4af407448a7">&#9670;&nbsp;</a></span>I2C_enable()</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentación de funciones</h2>
+<a id="gafbff174e11a59e45e12cbfa5044d8233" name="gafbff174e11a59e45e12cbfa5044d8233"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafbff174e11a59e45e12cbfa5044d8233">&#9670;&#160;</a></span>I2C_enable()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">I2C_enable </td>
+          <td class="memname">void I2C_enable </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>isEnabled</em></td><td>)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>isEnabled</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -329,24 +320,23 @@ Changelog</h1>
 
 </div>
 </div>
-<a id="gae2cec986d327013569df22dd2945ff58" name="gae2cec986d327013569df22dd2945ff58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae2cec986d327013569df22dd2945ff58">&#9670;&nbsp;</a></span>I2C_initialize()</h2>
+<a id="ga560ffec35071f9f2427fb89cb1518063" name="ga560ffec35071f9f2427fb89cb1518063"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga560ffec35071f9f2427fb89cb1518063">&#9670;&#160;</a></span>I2C_initialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">I2C_initialize </td>
+          <td class="memname">bool I2C_initialize </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>clockRateHz</em></td><td>)</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>clockRateHz</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Initialize I2C0. </p>
-<p >Initialize I2C0 </p>
+<p>Initialize I2C0 </p>
 
 <p class="definition">Definición en la línea <a class="el" href="i2c__mcu_8c_source.html#l00034">34</a> del archivo <a class="el" href="i2c__mcu_8c_source.html">i2c_mcu.c</a>.</p>
 
@@ -354,46 +344,36 @@ Changelog</h1>
 
 </div>
 </div>
-<a id="ga9ff51515a73e2748e863f88b94453806" name="ga9ff51515a73e2748e863f88b94453806"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9ff51515a73e2748e863f88b94453806">&#9670;&nbsp;</a></span>I2C_readBit()</h2>
+<a id="ga4d624276af2a431d579bef9e4a28026f" name="ga4d624276af2a431d579bef9e4a28026f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4d624276af2a431d579bef9e4a28026f">&#9670;&#160;</a></span>I2C_readBit()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">I2C_readBit </td>
+          <td class="memname">int8_t I2C_readBit </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>devAddr</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>devAddr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>regAddr</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>regAddr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>bitNum</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>bitNum</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>timeout</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>timeout</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -430,52 +410,41 @@ Changelog</h1>
 
 </div>
 </div>
-<a id="ga45576a616bac63831ccbb0d803e02937" name="ga45576a616bac63831ccbb0d803e02937"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga45576a616bac63831ccbb0d803e02937">&#9670;&nbsp;</a></span>I2C_readBits()</h2>
+<a id="ga9c5bd9ab314bb478a2c70c07d0da9f50" name="ga9c5bd9ab314bb478a2c70c07d0da9f50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9c5bd9ab314bb478a2c70c07d0da9f50">&#9670;&#160;</a></span>I2C_readBits()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">I2C_readBits </td>
+          <td class="memname">int8_t I2C_readBits </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>devAddr</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>devAddr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>regAddr</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>regAddr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>bitStart</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>bitStart</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>length</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>length</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>timeout</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>timeout</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -514,40 +483,31 @@ Changelog</h1>
 
 </div>
 </div>
-<a id="ga4a21b6f9f325022b28bad83c9eb9896c" name="ga4a21b6f9f325022b28bad83c9eb9896c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4a21b6f9f325022b28bad83c9eb9896c">&#9670;&nbsp;</a></span>I2C_readByte()</h2>
+<a id="ga0d0c191057f18dab8738b3c5f523cb01" name="ga0d0c191057f18dab8738b3c5f523cb01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0d0c191057f18dab8738b3c5f523cb01">&#9670;&#160;</a></span>I2C_readByte()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">I2C_readByte </td>
+          <td class="memname">int8_t I2C_readByte </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>devAddr</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>devAddr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>regAddr</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>regAddr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>timeout</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>timeout</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -582,46 +542,36 @@ Changelog</h1>
 
 </div>
 </div>
-<a id="ga63ed6aeafd8e26b0cf22f5477746c123" name="ga63ed6aeafd8e26b0cf22f5477746c123"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga63ed6aeafd8e26b0cf22f5477746c123">&#9670;&nbsp;</a></span>I2C_readBytes()</h2>
+<a id="ga1a538e675a9e424dcd26b26c9aef3a00" name="ga1a538e675a9e424dcd26b26c9aef3a00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1a538e675a9e424dcd26b26c9aef3a00">&#9670;&#160;</a></span>I2C_readBytes()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">I2C_readBytes </td>
+          <td class="memname">int8_t I2C_readBytes </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>devAddr</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>devAddr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>regAddr</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>regAddr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>length</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>length</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>timeout</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>timeout</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -652,46 +602,37 @@ Changelog</h1>
 
 <p class="definition">Definición en la línea <a class="el" href="i2c__mcu_8c_source.html#l00126">126</a> del archivo <a class="el" href="i2c__mcu_8c_source.html">i2c_mcu.c</a>.</p>
 
-<p class="reference">Hace referencia a <a class="el" href="bootloader-cfgcmd_8txt_source.html#l00001">cmd</a>, <a class="el" href="mpu6050_8c_source.html#l00020">devAddr</a>, <a class="el" href="i2c__mcu_8c_source.html#l00024">ESP_ERROR_CHECK</a>, <a class="el" href="i2c__mcu_8c_source.html#l00021">I2C_NUM</a> y <a class="el" href="i2c__mcu_8c_source.html#l00153">I2C_SelectRegister()</a>.</p>
+<p class="reference">Hace referencia a <a class="el" href="mpu6050_8c_source.html#l00020">devAddr</a>, <a class="el" href="i2c__mcu_8c_source.html#l00024">ESP_ERROR_CHECK</a>, <a class="el" href="mpu6050_8c_source.html#l00017">I2C_NUM</a> y <a class="el" href="i2c__mcu_8c_source.html#l00153">I2C_SelectRegister()</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="i2c__mcu_8c_source.html#l00114">I2C_readByte()</a>, <a class="el" href="i2c__mcu_8c_source.html#l00260">I2C_readWord()</a>, <a class="el" href="mpu6050_8c_source.html#l01822">MPU6050_getAcceleration()</a>, <a class="el" href="mpu6050_8c_source.html#l01833">MPU6050_getAccelerationX()</a>, <a class="el" href="mpu6050_8c_source.html#l01842">MPU6050_getAccelerationY()</a>, <a class="el" href="mpu6050_8c_source.html#l01851">MPU6050_getAccelerationZ()</a>, <a class="el" href="mpu6050_8c_source.html#l00267">MPU6050_getAccelZSelfTestFactoryTrim()</a>, <a class="el" href="mpu6050_8c_source.html#l02029">MPU6050_getExternalSensorDWord()</a>, <a class="el" href="mpu6050_8c_source.html#l02020">MPU6050_getExternalSensorWord()</a>, <a class="el" href="mpu6050_8c_source.html#l02728">MPU6050_getFIFOBytes()</a>, <a class="el" href="mpu6050_8c_source.html#l02692">MPU6050_getFIFOCount()</a>, <a class="el" href="mpu6050_8c_source.html#l01777">MPU6050_getMotion6()</a>, <a class="el" href="mpu6050_8c_source.html#l01901">MPU6050_getRotation()</a>, <a class="el" href="mpu6050_8c_source.html#l01912">MPU6050_getRotationX()</a>, <a class="el" href="mpu6050_8c_source.html#l01921">MPU6050_getRotationY()</a>, <a class="el" href="mpu6050_8c_source.html#l01930">MPU6050_getRotationZ()</a> y <a class="el" href="mpu6050_8c_source.html#l01862">MPU6050_getTemperature()</a>.</p>
 
 </div>
 </div>
-<a id="ga3c1b580e0f8d3bffbb1087265be558d2" name="ga3c1b580e0f8d3bffbb1087265be558d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3c1b580e0f8d3bffbb1087265be558d2">&#9670;&nbsp;</a></span>I2C_readWord()</h2>
+<a id="ga94f7abf82855002808a338891ee76d13" name="ga94f7abf82855002808a338891ee76d13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga94f7abf82855002808a338891ee76d13">&#9670;&#160;</a></span>I2C_readWord()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">I2C_readWord </td>
+          <td class="memname">int8_t I2C_readWord </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>devAddr</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>devAddr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>regAddr</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>regAddr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
+          <td class="paramtype">uint16_t *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>timeout</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>timeout</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -724,28 +665,21 @@ Changelog</h1>
 
 </div>
 </div>
-<a id="ga1900aab43da6013cadb944301c929562" name="ga1900aab43da6013cadb944301c929562"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1900aab43da6013cadb944301c929562">&#9670;&nbsp;</a></span>I2C_SelectRegister()</h2>
+<a id="ga3cc36e317364b108dc5c2614ddd6bb1a" name="ga3cc36e317364b108dc5c2614ddd6bb1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3cc36e317364b108dc5c2614ddd6bb1a">&#9670;&#160;</a></span>I2C_SelectRegister()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">I2C_SelectRegister </td>
+          <td class="memname">void I2C_SelectRegister </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>dev</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>dev</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>reg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>reg</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -761,46 +695,37 @@ Changelog</h1>
 
 <p class="definition">Definición en la línea <a class="el" href="i2c__mcu_8c_source.html#l00153">153</a> del archivo <a class="el" href="i2c__mcu_8c_source.html">i2c_mcu.c</a>.</p>
 
-<p class="reference">Hace referencia a <a class="el" href="bootloader-cfgcmd_8txt_source.html#l00001">cmd</a>, <a class="el" href="mpu6050_8c_source.html#l00020">devAddr</a>, <a class="el" href="i2c__mcu_8c_source.html#l00024">ESP_ERROR_CHECK</a> y <a class="el" href="i2c__mcu_8c_source.html#l00021">I2C_NUM</a>.</p>
+<p class="reference">Hace referencia a <a class="el" href="mpu6050_8c_source.html#l00020">devAddr</a>, <a class="el" href="i2c__mcu_8c_source.html#l00024">ESP_ERROR_CHECK</a> y <a class="el" href="mpu6050_8c_source.html#l00017">I2C_NUM</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="i2c__mcu_8c_source.html#l00126">I2C_readBytes()</a> y <a class="el" href="mpu6050_8c_source.html#l00025">MPU6050_ReadRegister()</a>.</p>
 
 </div>
 </div>
-<a id="gadddc908cb8cdad77fc824cca1ac2f077" name="gadddc908cb8cdad77fc824cca1ac2f077"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadddc908cb8cdad77fc824cca1ac2f077">&#9670;&nbsp;</a></span>I2C_writeBit()</h2>
+<a id="gab63835618b4d5f656d425d11a3187c11" name="gab63835618b4d5f656d425d11a3187c11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab63835618b4d5f656d425d11a3187c11">&#9670;&#160;</a></span>I2C_writeBit()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">I2C_writeBit </td>
+          <td class="memname">bool I2C_writeBit </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>devAddr</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>devAddr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>regAddr</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>regAddr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>bitNum</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>bitNum</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -835,46 +760,36 @@ Changelog</h1>
 
 </div>
 </div>
-<a id="gacb23109c5269fd39be9c926552924eea" name="gacb23109c5269fd39be9c926552924eea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacb23109c5269fd39be9c926552924eea">&#9670;&nbsp;</a></span>I2C_writeBits()</h2>
+<a id="ga9b2cf38ef7155fdd7cc00407f4ff954a" name="ga9b2cf38ef7155fdd7cc00407f4ff954a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9b2cf38ef7155fdd7cc00407f4ff954a">&#9670;&#160;</a></span>I2C_writeBits()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">I2C_writeBits </td>
+          <td class="memname">bool I2C_writeBits </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>devAddr</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>devAddr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>regAddr</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>regAddr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>bitStart</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>bitStart</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>length</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>length</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -911,34 +826,26 @@ Changelog</h1>
 
 </div>
 </div>
-<a id="ga6525bb5162f38b6350d6bc3a3c9c98d7" name="ga6525bb5162f38b6350d6bc3a3c9c98d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6525bb5162f38b6350d6bc3a3c9c98d7">&#9670;&nbsp;</a></span>I2C_writeByte()</h2>
+<a id="ga01d5214376094baa433844c6914c1609" name="ga01d5214376094baa433844c6914c1609"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga01d5214376094baa433844c6914c1609">&#9670;&#160;</a></span>I2C_writeByte()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">I2C_writeByte </td>
+          <td class="memname">bool I2C_writeByte </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>devAddr</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>devAddr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>regAddr</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>regAddr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -965,46 +872,37 @@ Changelog</h1>
 
 <p class="definition">Definición en la línea <a class="el" href="i2c__mcu_8c_source.html#l00214">214</a> del archivo <a class="el" href="i2c__mcu_8c_source.html">i2c_mcu.c</a>.</p>
 
-<p class="reference">Hace referencia a <a class="el" href="bootloader-cfgcmd_8txt_source.html#l00001">cmd</a>, <a class="el" href="mpu6050_8c_source.html#l00020">devAddr</a>, <a class="el" href="i2c__mcu_8c_source.html#l00024">ESP_ERROR_CHECK</a> y <a class="el" href="i2c__mcu_8c_source.html#l00021">I2C_NUM</a>.</p>
+<p class="reference">Hace referencia a <a class="el" href="mpu6050_8c_source.html#l00020">devAddr</a>, <a class="el" href="i2c__mcu_8c_source.html#l00024">ESP_ERROR_CHECK</a> y <a class="el" href="mpu6050_8c_source.html#l00017">I2C_NUM</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="i2c__mcu_8c_source.html#l00172">I2C_writeBit()</a>, <a class="el" href="i2c__mcu_8c_source.html#l00187">I2C_writeBits()</a>, <a class="el" href="mpu6050_8c_source.html#l02739">MPU6050_setFIFOByte()</a>, <a class="el" href="mpu6050_8c_source.html#l00481">MPU6050_setFreefallDetectionDuration()</a>, <a class="el" href="mpu6050_8c_source.html#l00449">MPU6050_setFreefallDetectionThreshold()</a>, <a class="el" href="mpu6050_8c_source.html#l01542">MPU6050_setIntEnabled()</a>, <a class="el" href="mpu6050_8c_source.html#l00545">MPU6050_setMotionDetectionDuration()</a>, <a class="el" href="mpu6050_8c_source.html#l00515">MPU6050_setMotionDetectionThreshold()</a>, <a class="el" href="mpu6050_8c_source.html#l00117">MPU6050_setRate()</a>, <a class="el" href="mpu6050_8c_source.html#l01127">MPU6050_setSlave4Address()</a>, <a class="el" href="mpu6050_8c_source.html#l01155">MPU6050_setSlave4OutputByte()</a>, <a class="el" href="mpu6050_8c_source.html#l01146">MPU6050_setSlave4Register()</a>, <a class="el" href="mpu6050_8c_source.html#l00955">MPU6050_setSlaveAddress()</a>, <a class="el" href="mpu6050_8c_source.html#l02118">MPU6050_setSlaveOutputByte()</a>, <a class="el" href="mpu6050_8c_source.html#l00981">MPU6050_setSlaveRegister()</a>, <a class="el" href="mpu6050_8c_source.html#l00616">MPU6050_setZeroMotionDetectionDuration()</a> y <a class="el" href="mpu6050_8c_source.html#l00585">MPU6050_setZeroMotionDetectionThreshold()</a>.</p>
 
 </div>
 </div>
-<a id="ga58d10cf019bafffc7f9b4c2a0b019b53" name="ga58d10cf019bafffc7f9b4c2a0b019b53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga58d10cf019bafffc7f9b4c2a0b019b53">&#9670;&nbsp;</a></span>I2C_writeBytes()</h2>
+<a id="ga24241da9fe8968b78ecdff0d4700d5f1" name="ga24241da9fe8968b78ecdff0d4700d5f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga24241da9fe8968b78ecdff0d4700d5f1">&#9670;&#160;</a></span>I2C_writeBytes()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">I2C_writeBytes </td>
+          <td class="memname">bool I2C_writeBytes </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>devAddr</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>devAddr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>regAddr</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>regAddr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>length</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>length</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1033,14 +931,14 @@ Changelog</h1>
 
 <p class="definition">Definición en la línea <a class="el" href="i2c__mcu_8c_source.html#l00236">236</a> del archivo <a class="el" href="i2c__mcu_8c_source.html">i2c_mcu.c</a>.</p>
 
-<p class="reference">Hace referencia a <a class="el" href="bootloader-cfgcmd_8txt_source.html#l00001">cmd</a>, <a class="el" href="mpu6050_8c_source.html#l00020">devAddr</a>, <a class="el" href="i2c__mcu_8c_source.html#l00024">ESP_ERROR_CHECK</a> y <a class="el" href="i2c__mcu_8c_source.html#l00021">I2C_NUM</a>.</p>
+<p class="reference">Hace referencia a <a class="el" href="mpu6050_8c_source.html#l00020">devAddr</a>, <a class="el" href="i2c__mcu_8c_source.html#l00024">ESP_ERROR_CHECK</a> y <a class="el" href="mpu6050_8c_source.html#l00017">I2C_NUM</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="i2c__mcu_8c_source.html#l00146">I2C_writeWord()</a>.</p>
 
 </div>
 </div>
 <a id="gabfa0fda26a1a14f65a058f8d6dc2b55b" name="gabfa0fda26a1a14f65a058f8d6dc2b55b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabfa0fda26a1a14f65a058f8d6dc2b55b">&#9670;&nbsp;</a></span>I2C_writeWord()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gabfa0fda26a1a14f65a058f8d6dc2b55b">&#9670;&#160;</a></span>I2C_writeWord()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1048,25 +946,17 @@ Changelog</h1>
         <tr>
           <td class="memname">bool I2C_writeWord </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>devAddr</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>devAddr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>regAddr</em>, </td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>regAddr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1090,10 +980,18 @@ Changelog</h1>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>
 </body>

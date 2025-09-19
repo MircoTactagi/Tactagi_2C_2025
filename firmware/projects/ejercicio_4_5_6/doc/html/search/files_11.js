@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['version_5ffeatures_2ec_0',['version_features.c',['../version__features_8c.html',1,'']]]
+  ['ws2812b_2ec_0',['ws2812b.c',['../ws2812b_8c.html',1,'']]],
+  ['ws2812b_2eh_1',['ws2812b.h',['../ws2812b_8h.html',1,'']]]
 ];
