@@ -35,6 +35,9 @@
         },
         {
             "path": "projects/p2_ejercicio_2_ok"
+        },
+        {
+            "path": "projects/p2_act_3"
         }
     ],
     "settings": {
@@ -89,7 +92,8 @@
             "mpu6050.h": "c",
             "i2c_mcu.h": "c",
             "cstdint": "c",
-            "compare": "c"
+            "compare": "c",
+            "type_traits": "c"
         },
     },
     "tasks": {
