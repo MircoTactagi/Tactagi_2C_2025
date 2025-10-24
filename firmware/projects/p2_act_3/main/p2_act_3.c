@@ -28,7 +28,8 @@ bool DetenerMedicion = false;   /**< Flag para detener medición y LEDs */
 bool DistanciaenIn = false;
 uint32_t periodo_lectura = CONFIG_MEDIR_DISTANCIA_PERIOD_US;
 TaskHandle_t medir_task_handle = NULL;   /**< Handle de la tarea de medición */
-
+uint16_t distancia_max_in = 0; 
+uint16_t distancia_max_cm = 0; 
 /*==================[internal functions declaration]=========================*/
 
 /* Callbacks de switches */
@@ -47,9 +48,8 @@ void FuncTimerA(void* param){
 
 void EnviarDistanciaPorUART(uint16_t distancia) {
 
-    uint8_t *num_str = UartItoa(distancia, 10);
 
-    UartSendString(UART_PC, (char*)num_str);
+    UartSendString(UART_PC, (char*)UartItoa(distancia, 10));
     if (DistanciaenIn == false){
         UartSendString(UART_PC, " cm\r\n");
     }
@@ -80,9 +80,33 @@ void InterrupcionPorUart(void) {
             DistanciaenIn= !DistanciaenIn;
             break;
         case 'M':
-        case 'm':
-            FijarMedicion = !FijarMedicion;
+        case 'm': {
+            // Convertir distancia_max a string
+            uint8_t *num_str_cm = UartItoa(distancia_max_cm, 10);
+            uint8_t *num_str_in = UartItoa(distancia_max_in, 10);
+            
+            if (DistanciaenIn == false) {
+                UartSendString(UART_PC, (char*)num_str_cm);
+                UartSendString(UART_PC, " MAXIMO en");
+                UartSendString(UART_PC, " cm\r\n");
+                LcdItsE0803Write(distancia_max_cm);
+                FijarMedicion = true;     
+                vTaskDelay(pdMS_TO_TICKS(5000));  
+                FijarMedicion = false;    
+            } else {
+                UartSendString(UART_PC, (char*)num_str_in);
+                UartSendString(UART_PC, " MAXIMO en");
+                UartSendString(UART_PC, " In\r\n");
+                LcdItsE0803Write(distancia_max_in);
+                FijarMedicion = true;     
+                vTaskDelay(pdMS_TO_TICKS(5000));  
+                FijarMedicion = false;    
+            }
+
+
             break;
+        }
+
         case 'F': case 'f':
                 periodo_lectura -= 100000; 
             TimerUpdatePeriod(TIMER_A, periodo_lectura);
@@ -111,6 +135,7 @@ void Actualiza_leds(uint16_t distancia){
         LedOn(LED_3);
     }
 }
+
 static void TareaMedirDistancia(void *pvParameters) {
     while (true) {
         ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
@@ -120,10 +145,14 @@ static void TareaMedirDistancia(void *pvParameters) {
 
             if (DistanciaenIn == false) {
                 distancia = HcSr04ReadDistanceInCentimeters();
-            }
-
-            if (DistanciaenIn == true) {
+                if (distancia > distancia_max_cm) {
+                    distancia_max_cm = distancia;
+                }
+            } else { // Distancia en pulgadas
                 distancia = HcSr04ReadDistanceInInches();
+                if (distancia > distancia_max_in) {
+                    distancia_max_in = distancia;
+                }
             }
 
             Actualiza_leds(distancia);
@@ -154,13 +183,13 @@ void app_main(void){
 
     UartInit(&uart_pc);
     /* Configuración del timer */
-    timer_config_t timer_medicion = {
+   timer_config_t timer_medicion = {
         .timer = TIMER_A,
         .period = CONFIG_MEDIR_DISTANCIA_PERIOD_US,
         .func_p = FuncTimerA,
         .param_p = NULL
     };
-    TimerInit(&timer_medicion);
+    TimerInit(&timer_medicion); 
 
     /* Activar interrupciones en switches */
     SwitchActivInt(SWITCH_1, especta_tecla_1, NULL);
