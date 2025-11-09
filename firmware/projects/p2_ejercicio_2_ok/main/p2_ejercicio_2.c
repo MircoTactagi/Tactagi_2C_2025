@@ -1,11 +1,39 @@
-/**
- * @file main.c
- * @brief Ejemplo de medición de distancia con HC-SR04 y visualización en LEDs y LCD.
+/*! @mainpage Medición de Distancia con HC-SR04 (Interrupciones)
  *
- * Este programa hace parpadear LEDs según la distancia medida, y permite "fijar"
- * o "detener" la medición mediante interrupciones de switches.
+ * @section genDesc Descripción General
+ *
+ * Este programa mide la distancia utilizando el sensor ultrasónico HC-SR04.  
+ * La distancia obtenida se refleja en un conjunto de LEDs y se muestra en el 
+ * display LCD ITSE0803.  
+ * A diferencia de versiones anteriores, esta implementación utiliza **interrupciones**
+ * en los switches para fijar o detener la medición, y un **timer** para sincronizar
+ * las adquisiciones periódicas.
+ *
+ * @section hardConn Conexiones de Hardware
+ *
+ * | Periférico   | ESP32 GPIO |
+ * |:-------------:|:----------:|
+ * | HC-SR04 TRIG  | GPIO_3     |
+ * | HC-SR04 ECHO  | GPIO_2     |
+ * | LED_1         | GPIO_X     |
+ * | LED_2         | GPIO_Y     |
+ * | LED_3         | GPIO_Z     |
+ * | SWITCH_1 (Detener) | GPIO_A |
+ * | SWITCH_2 (Fijar)    | GPIO_B |
+ * | LCD ITSE0803  | GPIOs según interfaz I2C/SPI |
+ *
+ * @section changelog Registro de Versiones
+ *
+ * | Fecha       | Descripción                              |
+ * |:------------:|:------------------------------------------|
+ * | 26/09/2025   | Creación inicial del archivo              |
+ * | 09/11/2025   | Versión documentada y comentada (final)   |
+ *
+ * @author Mirco Tactagi
+ * @email mircotactagi@gmail.com
  */
 
+/*==================[inclusiones]===========================================*/
 #include <stdio.h>
 #include <stdint.h>
 #include <stdbool.h>
@@ -18,32 +46,54 @@
 #include "switch.h"
 #include "timer_mcu.h"
 
-/*==================[macros and definitions]=================================*/
-#define CONFIG_MEDIR_DISTANCIA_PERIOD_US 1000000  /**< Período de medición (1s) */
+/*==================[macros y definiciones]=================================*/
+#define CONFIG_MEDIR_DISTANCIA_PERIOD_US 1000000  /**< Período de medición (1 s) */
 
-/*==================[internal data definition]===============================*/
-bool FijarMedicion = false;     /**< Flag para fijar medición en LCD */
-bool DetenerMedicion = false;   /**< Flag para detener medición y LEDs */
+/*==================[definición de datos internos]==========================*/
+bool FijarMedicion = false;     /**< Flag para mantener medición actual en el LCD */
+bool DetenerMedicion = false;   /**< Flag para pausar la medición y apagar LEDs */
 TaskHandle_t medir_task_handle = NULL;   /**< Handle de la tarea de medición */
 
-/*==================[internal functions declaration]=========================*/
-
-/* Callbacks de switches */
-void especta_tecla_1(void* param){
+/*==================[declaración de funciones internas]=====================*/
+/**
+ * @brief Callback asociado al SWITCH_1.
+ * 
+ * Alterna el estado del flag @ref DetenerMedicion para pausar o reanudar la medición.
+ */
+void especta_tecla_1(void* param) {
     DetenerMedicion = !DetenerMedicion;
 }
 
-void especta_tecla_2(void* param){
+/**
+ * @brief Callback asociado al SWITCH_2.
+ * 
+ * Alterna el estado del flag @ref FijarMedicion para mantener o liberar la lectura en LCD.
+ */
+void especta_tecla_2(void* param) {
     FijarMedicion = !FijarMedicion;
 }
 
-/* Callback del timer */
-void FuncTimerA(void* param){
+/**
+ * @brief Callback del temporizador A.
+ * 
+ * Notifica a la tarea de medición para ejecutar una nueva adquisición de distancia.
+ */
+void FuncTimerA(void* param) {
     vTaskNotifyGiveFromISR(medir_task_handle, pdFALSE);
 }
 
-/* Actualiza LEDs según distancia */
-void Actualiza_leds(uint16_t distancia){
+/**
+ * @brief Actualiza los LEDs de acuerdo con la distancia medida.
+ * 
+ * @param distancia Distancia medida en centímetros.
+ * 
+ * @details
+ * - 0–9 cm: todos los LEDs apagados.  
+ * - 10–19 cm: LED_1 encendido.  
+ * - 20–29 cm: LED_1 y LED_2 encendidos.  
+ * - 30 cm o más: LED_1, LED_2 y LED_3 encendidos.
+ */
+void Actualiza_leds(uint16_t distancia) {
     LedsOffAll();
 
     if (distancia >= 10 && distancia < 20) {
@@ -58,10 +108,11 @@ void Actualiza_leds(uint16_t distancia){
     }
 }
 
-/*==================[tasks]==================================================*/
-
+/*==================[tareas FreeRTOS]=======================================*/
 /**
- * @brief Tarea que mide distancia y actualiza LEDs/LCD
+ * @brief Tarea que mide la distancia y actualiza LEDs y LCD.
+ * 
+ * Esta tarea es notificada por el timer mediante interrupción.
  */
 static void TareaMedirDistancia(void *pvParameters) {
     while (true) {
@@ -76,8 +127,14 @@ static void TareaMedirDistancia(void *pvParameters) {
     }
 }
 
-/*==================[external functions definition]==========================*/
-void app_main(void){
+/*==================[funciones externas]====================================*/
+/**
+ * @brief Función principal de la aplicación.
+ * 
+ * Inicializa periféricos, configura el timer, activa interrupciones en switches y 
+ * crea la tarea principal de medición de distancia.
+ */
+void app_main(void) {
     LedsInit();
     LcdItsE0803Init();
     SwitchesInit();
@@ -96,9 +153,11 @@ void app_main(void){
     SwitchActivInt(SWITCH_1, especta_tecla_1, NULL);
     SwitchActivInt(SWITCH_2, especta_tecla_2, NULL);
 
-    /* Crear tarea */
+    /* Crear tarea principal */
     xTaskCreate(&TareaMedirDistancia, "TareaMedirDistancia", 512, NULL, 5, &medir_task_handle);
 
-    /* Iniciar timer */
+    /* Iniciar el temporizador */
     TimerStart(timer_medicion.timer);
 }
+
+/*==================[end of file]===========================================*/

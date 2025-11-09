@@ -1,0 +1,517 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>p2_act_3: Referencia del archivo C:/Users/Usuario/Desktop/Tactagi_2C_2025/firmware/projects/p2_act_3/main/p2_act_3.c</title>
+<link rel="icon" href="icon.ico" type="image/x-icon" />
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="fiuner.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">p2_act_3<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('p2__act__3_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referencia del archivo p2_act_3.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &quot;freertos/FreeRTOS.h&quot;</code><br />
+<code>#include &quot;freertos/task.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="hc__sr04_8h_source.html">hc_sr04.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gpio__mcu_8h_source.html">gpio_mcu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="lcditse0803_8h_source.html">lcditse0803.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="switch_8h_source.html">switch.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="timer__mcu_8h_source.html">timer_mcu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="uart__mcu_8h_source.html">uart_mcu.h</a>&quot;</code><br />
+</div>
+<p><a href="p2__act__3_8c_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:a0fa0bf3f2eb70bb54d54c47ec914592f" id="r_a0fa0bf3f2eb70bb54d54c47ec914592f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fa0bf3f2eb70bb54d54c47ec914592f">CONFIG_MEDIR_DISTANCIA_PERIOD_US</a>&#160;&#160;&#160;1000000</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:ae1bf2697b6fcb37b0b904e05e1de419b" id="r_ae1bf2697b6fcb37b0b904e05e1de419b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1bf2697b6fcb37b0b904e05e1de419b">especta_tecla_1</a> (void *param)</td></tr>
+<tr class="memdesc:ae1bf2697b6fcb37b0b904e05e1de419b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback del switch 1.  <br /></td></tr>
+<tr class="memitem:ac46b1c30ab85efc5f6495d970d2a0ee1" id="r_ac46b1c30ab85efc5f6495d970d2a0ee1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac46b1c30ab85efc5f6495d970d2a0ee1">especta_tecla_2</a> (void *param)</td></tr>
+<tr class="memdesc:ac46b1c30ab85efc5f6495d970d2a0ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback del switch 2.  <br /></td></tr>
+<tr class="memitem:afaccfed84cd1498a05ea04a65f1209b1" id="r_afaccfed84cd1498a05ea04a65f1209b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afaccfed84cd1498a05ea04a65f1209b1">FuncTimerA</a> (void *param)</td></tr>
+<tr class="memdesc:afaccfed84cd1498a05ea04a65f1209b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback del temporizador.  <br /></td></tr>
+<tr class="memitem:a3cbdd064dd4fb4a5e7925305646a608d" id="r_a3cbdd064dd4fb4a5e7925305646a608d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cbdd064dd4fb4a5e7925305646a608d">EnviarDistanciaPorUART</a> (uint16_t distancia)</td></tr>
+<tr class="memdesc:a3cbdd064dd4fb4a5e7925305646a608d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Envía la distancia medida a través de la UART.  <br /></td></tr>
+<tr class="memitem:a9786692725f12a2976041dd4d93c5792" id="r_a9786692725f12a2976041dd4d93c5792"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9786692725f12a2976041dd4d93c5792">InterrupcionPorUart</a> (void)</td></tr>
+<tr class="memdesc:a9786692725f12a2976041dd4d93c5792"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupción de recepción por UART.  <br /></td></tr>
+<tr class="memitem:a913116a9a6dca5cb1b304c0edab01642" id="r_a913116a9a6dca5cb1b304c0edab01642"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a913116a9a6dca5cb1b304c0edab01642">Actualiza_leds</a> (uint16_t distancia)</td></tr>
+<tr class="memdesc:a913116a9a6dca5cb1b304c0edab01642"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualiza los <a class="el" href="group___l_e_d.html#gab6831a7d06c0a2bc69f9b024f6445a80" title="LED driver for the ESP-EDU Board.">LEDs</a> en función de la distancia.  <br /></td></tr>
+<tr class="memitem:a630544a7f0a2cc40d8a7fefab7e2fe70" id="r_a630544a7f0a2cc40d8a7fefab7e2fe70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a630544a7f0a2cc40d8a7fefab7e2fe70">app_main</a> (void)</td></tr>
+<tr class="memdesc:a630544a7f0a2cc40d8a7fefab7e2fe70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función principal del programa.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a3388dbe5a1eeaf1c428767b5674af58f" id="r_a3388dbe5a1eeaf1c428767b5674af58f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3388dbe5a1eeaf1c428767b5674af58f">FijarMedicion</a> = false</td></tr>
+<tr class="memitem:ae29eb5e6828c0a38932103443fdbd3ed" id="r_ae29eb5e6828c0a38932103443fdbd3ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae29eb5e6828c0a38932103443fdbd3ed">DetenerMedicion</a> = false</td></tr>
+<tr class="memitem:a136e3a8ec619875c0e3cbee1a77a1d18" id="r_a136e3a8ec619875c0e3cbee1a77a1d18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a136e3a8ec619875c0e3cbee1a77a1d18">DistanciaenIn</a> = false</td></tr>
+<tr class="memitem:a8c168d9a03ccfa3d9b85cfce0a58208b" id="r_a8c168d9a03ccfa3d9b85cfce0a58208b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c168d9a03ccfa3d9b85cfce0a58208b">periodo_lectura</a> = <a class="el" href="#a0fa0bf3f2eb70bb54d54c47ec914592f">CONFIG_MEDIR_DISTANCIA_PERIOD_US</a></td></tr>
+<tr class="memitem:a2b0cb40d7a31ce7e8b3f906fd55df312" id="r_a2b0cb40d7a31ce7e8b3f906fd55df312"><td class="memItemLeft" align="right" valign="top">TaskHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b0cb40d7a31ce7e8b3f906fd55df312">medir_task_handle</a> = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
+<tr class="memitem:a63b366af59405957132c130c7b74c321" id="r_a63b366af59405957132c130c7b74c321"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63b366af59405957132c130c7b74c321">distancia_max_in</a> = 0</td></tr>
+<tr class="memitem:a71ecd253d51bed5eeafabdf47435af1f" id="r_a71ecd253d51bed5eeafabdf47435af1f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71ecd253d51bed5eeafabdf47435af1f">distancia_max_cm</a> = 0</td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Documentación de «define»</h2>
+<a id="a0fa0bf3f2eb70bb54d54c47ec914592f" name="a0fa0bf3f2eb70bb54d54c47ec914592f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fa0bf3f2eb70bb54d54c47ec914592f">&#9670;&#160;</a></span>CONFIG_MEDIR_DISTANCIA_PERIOD_US</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONFIG_MEDIR_DISTANCIA_PERIOD_US&#160;&#160;&#160;1000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Período de medición (1 s) </p>
+
+<p class="definition">Definición en la línea <a class="el" href="p2__act__3_8c_source.html#l00054">54</a> del archivo <a class="el" href="p2__act__3_8c_source.html">p2_act_3.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="p2__act__3_8c_source.html#l00224">app_main()</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentación de funciones</h2>
+<a id="a913116a9a6dca5cb1b304c0edab01642" name="a913116a9a6dca5cb1b304c0edab01642"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a913116a9a6dca5cb1b304c0edab01642">&#9670;&#160;</a></span>Actualiza_leds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Actualiza_leds </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>distancia</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Actualiza los <a class="el" href="group___l_e_d.html#gab6831a7d06c0a2bc69f9b024f6445a80" title="LED driver for the ESP-EDU Board.">LEDs</a> en función de la distancia. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">distancia</td><td>Valor de distancia medido. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="p2__act__3_8c_source.html#l00167">167</a> del archivo <a class="el" href="p2__act__3_8c_source.html">p2_act_3.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="led_8h_source.html#l00034">LED_1</a>, <a class="el" href="led_8h_source.html#l00033">LED_2</a>, <a class="el" href="led_8h_source.html#l00032">LED_3</a>, <a class="el" href="led_8c_source.html#l00046">LedOn()</a> y <a class="el" href="led_8c_source.html#l00105">LedsOffAll()</a>.</p>
+
+</div>
+</div>
+<a id="a630544a7f0a2cc40d8a7fefab7e2fe70" name="a630544a7f0a2cc40d8a7fefab7e2fe70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a630544a7f0a2cc40d8a7fefab7e2fe70">&#9670;&#160;</a></span>app_main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void app_main </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Función principal del programa. </p>
+<p>Inicializa los periféricos (<a class="el" href="group___l_e_d.html#gab6831a7d06c0a2bc69f9b024f6445a80" title="LED driver for the ESP-EDU Board.">LEDs</a>, LCD, switches, UART, timer y sensor HC-SR04) y crea la tarea principal de medición. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="p2__act__3_8c_source.html#l00224">224</a> del archivo <a class="el" href="p2__act__3_8c_source.html">p2_act_3.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="p2__act__3_8c_source.html#l00054">CONFIG_MEDIR_DISTANCIA_PERIOD_US</a>, <a class="el" href="p2__act__3_8c_source.html#l00071">especta_tecla_1()</a>, <a class="el" href="p2__act__3_8c_source.html#l00080">especta_tecla_2()</a>, <a class="el" href="p2__act__3_8c_source.html#l00089">FuncTimerA()</a>, <a class="el" href="gpio__mcu_8h_source.html#l00054">GPIO_2</a>, <a class="el" href="gpio__mcu_8h_source.html#l00055">GPIO_3</a>, <a class="el" href="hc__sr04_8c_source.html#l00034">HcSr04Init()</a>, <a class="el" href="p2__act__3_8c_source.html#l00118">InterrupcionPorUart()</a>, <a class="el" href="lcditse0803_8c_source.html#l00037">LcdItsE0803Init()</a>, <a class="el" href="led_8c_source.html#l00031">LedsInit()</a>, <a class="el" href="p2__act__3_8c_source.html#l00061">medir_task_handle</a>, <a class="el" href="ili9341_8c_source.html#l00019">NULL</a>, <a class="el" href="switch_8h_source.html#l00032">SWITCH_1</a>, <a class="el" href="switch_8h_source.html#l00033">SWITCH_2</a>, <a class="el" href="switch_8c_source.html#l00047">SwitchActivInt()</a>, <a class="el" href="switch_8c_source.html#l00029">SwitchesInit()</a>, <a class="el" href="timer__mcu_8h_source.html#l00040">timer_config_t::timer</a>, <a class="el" href="timer__mcu_8h_source.html#l00032">TIMER_A</a>, <a class="el" href="timer__mcu_8c_source.html#l00067">TimerInit()</a>, <a class="el" href="timer__mcu_8c_source.html#l00116">TimerStart()</a>, <a class="el" href="uart__mcu_8h_source.html#l00032">UART_PC</a> y <a class="el" href="uart__mcu_8c_source.html#l00107">UartInit()</a>.</p>
+
+</div>
+</div>
+<a id="a3cbdd064dd4fb4a5e7925305646a608d" name="a3cbdd064dd4fb4a5e7925305646a608d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cbdd064dd4fb4a5e7925305646a608d">&#9670;&#160;</a></span>EnviarDistanciaPorUART()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EnviarDistanciaPorUART </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>distancia</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Envía la distancia medida a través de la UART. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">distancia</td><td>Valor de distancia a enviar. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="p2__act__3_8c_source.html#l00098">98</a> del archivo <a class="el" href="p2__act__3_8c_source.html">p2_act_3.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="p2__act__3_8c_source.html#l00059">DistanciaenIn</a>, <a class="el" href="uart__mcu_8h_source.html#l00032">UART_PC</a>, <a class="el" href="uart__mcu_8c_source.html#l00222">UartItoa()</a> y <a class="el" href="uart__mcu_8c_source.html#l00193">UartSendString()</a>.</p>
+
+</div>
+</div>
+<a id="ae1bf2697b6fcb37b0b904e05e1de419b" name="ae1bf2697b6fcb37b0b904e05e1de419b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1bf2697b6fcb37b0b904e05e1de419b">&#9670;&#160;</a></span>especta_tecla_1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void especta_tecla_1 </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>param</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback del switch 1. </p>
+<p>Alterna el estado de la bandera que detiene o reanuda la medición. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="p2__act__3_8c_source.html#l00071">71</a> del archivo <a class="el" href="p2__act__3_8c_source.html">p2_act_3.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="p2__act__3_8c_source.html#l00058">DetenerMedicion</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="p2__act__3_8c_source.html#l00224">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="ac46b1c30ab85efc5f6495d970d2a0ee1" name="ac46b1c30ab85efc5f6495d970d2a0ee1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac46b1c30ab85efc5f6495d970d2a0ee1">&#9670;&#160;</a></span>especta_tecla_2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void especta_tecla_2 </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>param</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback del switch 2. </p>
+<p>Alterna el estado de la bandera que fija la medición en pantalla. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="p2__act__3_8c_source.html#l00080">80</a> del archivo <a class="el" href="p2__act__3_8c_source.html">p2_act_3.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="p2__act__3_8c_source.html#l00057">FijarMedicion</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="p2__act__3_8c_source.html#l00224">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="afaccfed84cd1498a05ea04a65f1209b1" name="afaccfed84cd1498a05ea04a65f1209b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaccfed84cd1498a05ea04a65f1209b1">&#9670;&#160;</a></span>FuncTimerA()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FuncTimerA </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>param</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback del temporizador. </p>
+<p>Notifica a la tarea de medición para que realice una nueva lectura. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="p2__act__3_8c_source.html#l00089">89</a> del archivo <a class="el" href="p2__act__3_8c_source.html">p2_act_3.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="p2__act__3_8c_source.html#l00061">medir_task_handle</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="p2__act__3_8c_source.html#l00224">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="a9786692725f12a2976041dd4d93c5792" name="a9786692725f12a2976041dd4d93c5792"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9786692725f12a2976041dd4d93c5792">&#9670;&#160;</a></span>InterrupcionPorUart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InterrupcionPorUart </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupción de recepción por UART. </p>
+<p>Gestiona comandos para controlar la aplicación:</p><ul>
+<li><span class="tt">O</span> / <span class="tt">o</span>: detener o reanudar medición <br  />
+</li>
+<li><span class="tt">H</span> / <span class="tt">h</span>: fijar o liberar valor en LCD <br  />
+</li>
+<li><span class="tt">I</span> / <span class="tt">i</span>: alternar entre cm e in <br  />
+</li>
+<li><span class="tt">M</span> / <span class="tt">m</span>: mostrar valor máximo medido <br  />
+</li>
+<li><span class="tt">F</span> / <span class="tt">f</span>: aumentar frecuencia de medición <br  />
+</li>
+<li><span class="tt">S</span> / <span class="tt">s</span>: disminuir frecuencia de medición </li>
+</ul>
+
+<p class="definition">Definición en la línea <a class="el" href="p2__act__3_8c_source.html#l00118">118</a> del archivo <a class="el" href="p2__act__3_8c_source.html">p2_act_3.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="p2__act__3_8c_source.html#l00058">DetenerMedicion</a>, <a class="el" href="p2__act__3_8c_source.html#l00063">distancia_max_cm</a>, <a class="el" href="p2__act__3_8c_source.html#l00062">distancia_max_in</a>, <a class="el" href="p2__act__3_8c_source.html#l00059">DistanciaenIn</a>, <a class="el" href="p2__act__3_8c_source.html#l00057">FijarMedicion</a>, <a class="el" href="lcditse0803_8c_source.html#l00054">LcdItsE0803Write()</a>, <a class="el" href="p2__act__3_8c_source.html#l00060">periodo_lectura</a>, <a class="el" href="timer__mcu_8h_source.html#l00032">TIMER_A</a>, <a class="el" href="timer__mcu_8c_source.html#l00174">TimerUpdatePeriod()</a>, <a class="el" href="uart__mcu_8h_source.html#l00032">UART_PC</a>, <a class="el" href="uart__mcu_8c_source.html#l00222">UartItoa()</a>, <a class="el" href="uart__mcu_8c_source.html#l00142">UartReadByte()</a> y <a class="el" href="uart__mcu_8c_source.html#l00193">UartSendString()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="p2__act__3_8c_source.html#l00224">app_main()</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Documentación de variables</h2>
+<a id="ae29eb5e6828c0a38932103443fdbd3ed" name="ae29eb5e6828c0a38932103443fdbd3ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae29eb5e6828c0a38932103443fdbd3ed">&#9670;&#160;</a></span>DetenerMedicion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DetenerMedicion = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Flag para detener medición y <a class="el" href="group___l_e_d.html#gab6831a7d06c0a2bc69f9b024f6445a80" title="LED driver for the ESP-EDU Board.">LEDs</a> </p>
+
+<p class="definition">Definición en la línea <a class="el" href="p2__act__3_8c_source.html#l00058">58</a> del archivo <a class="el" href="p2__act__3_8c_source.html">p2_act_3.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="p2__act__3_8c_source.html#l00071">especta_tecla_1()</a> y <a class="el" href="p2__act__3_8c_source.html#l00118">InterrupcionPorUart()</a>.</p>
+
+</div>
+</div>
+<a id="a71ecd253d51bed5eeafabdf47435af1f" name="a71ecd253d51bed5eeafabdf47435af1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71ecd253d51bed5eeafabdf47435af1f">&#9670;&#160;</a></span>distancia_max_cm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t distancia_max_cm = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="p2__act__3_8c_source.html#l00063">63</a> del archivo <a class="el" href="p2__act__3_8c_source.html">p2_act_3.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="p2__act__3_8c_source.html#l00118">InterrupcionPorUart()</a>.</p>
+
+</div>
+</div>
+<a id="a63b366af59405957132c130c7b74c321" name="a63b366af59405957132c130c7b74c321"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63b366af59405957132c130c7b74c321">&#9670;&#160;</a></span>distancia_max_in</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t distancia_max_in = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="p2__act__3_8c_source.html#l00062">62</a> del archivo <a class="el" href="p2__act__3_8c_source.html">p2_act_3.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="p2__act__3_8c_source.html#l00118">InterrupcionPorUart()</a>.</p>
+
+</div>
+</div>
+<a id="a136e3a8ec619875c0e3cbee1a77a1d18" name="a136e3a8ec619875c0e3cbee1a77a1d18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a136e3a8ec619875c0e3cbee1a77a1d18">&#9670;&#160;</a></span>DistanciaenIn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DistanciaenIn = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Flag para cambiar unidades (cm/in) </p>
+
+<p class="definition">Definición en la línea <a class="el" href="p2__act__3_8c_source.html#l00059">59</a> del archivo <a class="el" href="p2__act__3_8c_source.html">p2_act_3.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="p2__act__3_8c_source.html#l00098">EnviarDistanciaPorUART()</a> y <a class="el" href="p2__act__3_8c_source.html#l00118">InterrupcionPorUart()</a>.</p>
+
+</div>
+</div>
+<a id="a3388dbe5a1eeaf1c428767b5674af58f" name="a3388dbe5a1eeaf1c428767b5674af58f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3388dbe5a1eeaf1c428767b5674af58f">&#9670;&#160;</a></span>FijarMedicion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FijarMedicion = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Flag para fijar medición en LCD </p>
+
+<p class="definition">Definición en la línea <a class="el" href="p2__act__3_8c_source.html#l00057">57</a> del archivo <a class="el" href="p2__act__3_8c_source.html">p2_act_3.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="p2__act__3_8c_source.html#l00080">especta_tecla_2()</a> y <a class="el" href="p2__act__3_8c_source.html#l00118">InterrupcionPorUart()</a>.</p>
+
+</div>
+</div>
+<a id="a2b0cb40d7a31ce7e8b3f906fd55df312" name="a2b0cb40d7a31ce7e8b3f906fd55df312"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b0cb40d7a31ce7e8b3f906fd55df312">&#9670;&#160;</a></span>medir_task_handle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TaskHandle_t medir_task_handle = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Handle de la tarea de medición </p>
+
+<p class="definition">Definición en la línea <a class="el" href="p2__act__3_8c_source.html#l00061">61</a> del archivo <a class="el" href="p2__act__3_8c_source.html">p2_act_3.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="p2__act__3_8c_source.html#l00224">app_main()</a> y <a class="el" href="p2__act__3_8c_source.html#l00089">FuncTimerA()</a>.</p>
+
+</div>
+</div>
+<a id="a8c168d9a03ccfa3d9b85cfce0a58208b" name="a8c168d9a03ccfa3d9b85cfce0a58208b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c168d9a03ccfa3d9b85cfce0a58208b">&#9670;&#160;</a></span>periodo_lectura</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t periodo_lectura = <a class="el" href="#a0fa0bf3f2eb70bb54d54c47ec914592f">CONFIG_MEDIR_DISTANCIA_PERIOD_US</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Período actual de lectura </p>
+
+<p class="definition">Definición en la línea <a class="el" href="p2__act__3_8c_source.html#l00060">60</a> del archivo <a class="el" href="p2__act__3_8c_source.html">p2_act_3.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="p2__act__3_8c_source.html#l00118">InterrupcionPorUart()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_d9edf6c004b4a7ff14fe9ae7a92214ee.html">firmware</a></li><li class="navelem"><a href="dir_429d80758da54da73083af4edd40d0b3.html">projects</a></li><li class="navelem"><a href="dir_9f1fda6ae02289d76b56dfc0350a29a2.html">p2_act_3</a></li><li class="navelem"><a href="dir_67cbf0937e028a20d7a5888bdb52f59a.html">main</a></li><li class="navelem"><a href="p2__act__3_8c.html">p2_act_3.c</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>
